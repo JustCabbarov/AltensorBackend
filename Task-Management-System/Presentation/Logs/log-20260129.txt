@@ -1,0 +1,45 @@
+[2026-01-29 12:38:03] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-29 12:38:03] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njk3MTkwODMsImV4cCI6MTc2OTcyMjY4MywiaWF0IjoxNzY5NzE5MDgzLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.jIOfHX6ZBlXIGCcQnjyOCKmkzzmZ3kW6XppTWqchKuM
+[2026-01-29 12:38:41] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-29 12:38:41] [INF] Retrieved all TaskItem entities
+[2026-01-29 12:39:12] [INF] Retrieved TaskItem with ID: 9
+[2026-01-29 12:39:13] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-29 13:13:41] [ERR] Failed executing DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD CONSTRAINT [FK_AspNetUsers_WorkGroup_WorkGroupId] FOREIGN KEY ([WorkGroupId]) REFERENCES [WorkGroup] ([Id]) ON DELETE CASCADE;
+[2026-01-29 13:15:22] [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] DROP CONSTRAINT [FK_AspNetUsers_WorkGroup_WorkGroupId];
+[2026-01-29 13:19:16] [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+[2026-01-29 15:09:22] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-29 15:09:56] [INF] New user registered: licabbarov1@gmail.com
+[2026-01-29 15:10:26] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-29 15:10:26] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiYjIwOTA0My1hZDdkLTRhMjEtYTNkZS0xYTIyMWNjZDAxZDgiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njk3MjgyMjYsImV4cCI6MTc2OTczMTgyNiwiaWF0IjoxNzY5NzI4MjI2LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.zAVrmgc0eCYuKnWFf4ehRk7JiV-FJT5ue7g-aOCfwsU
+[2026-01-29 15:11:55] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-29 15:11:56] [INF] Added WorkGroup with ID: 1
+[2026-01-29 15:11:56] [INF] MongoDB Test Log: Added entity at "2026-01-29T23:11:56.1870731Z"
+[2026-01-29 15:12:05] [INF] Retrieved all WorkGroup entities
+[2026-01-29 15:13:23] [INF] New user registered: licabbarov5@gmail.com
+[2026-01-29 15:14:25] [INF] Retrieved WorkGroup with ID: 1
+[2026-01-29 15:14:25] [INF] Updated WorkGroup with ID: 1
+[2026-01-29 15:14:31] [INF] Retrieved all WorkGroup entities
+[2026-01-29 15:22:02] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-29 15:22:02] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiYjIwOTA0My1hZDdkLTRhMjEtYTNkZS0xYTIyMWNjZDAxZDgiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njk3Mjg5MjIsImV4cCI6MTc2OTczMjUyMiwiaWF0IjoxNzY5NzI4OTIyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.EbI2WWVXrPPkGTIcH9punVrzibdfNCco1Sig3UCJ_9E
+[2026-01-29 15:22:33] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-29 15:22:33] [INF] Retrieved all WorkGroup entities
+[2026-01-29 15:31:24] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-29 15:31:24] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiYjIwOTA0My1hZDdkLTRhMjEtYTNkZS0xYTIyMWNjZDAxZDgiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njk3Mjk0ODQsImV4cCI6MTc2OTczMzA4NCwiaWF0IjoxNzY5NzI5NDg0LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.DDylVUTx8sJ8b9ZVLKtoowgkrJrtfkxTAOURIAqrgQM
+[2026-01-29 15:32:13] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-29 15:32:13] [INF] Retrieved all WorkGroup entities
+[2026-01-29 15:43:13] [INF] Retrieved all WorkGroup entities
+[2026-01-29 15:49:01] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-29 15:49:01] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJiYjIwOTA0My1hZDdkLTRhMjEtYTNkZS0xYTIyMWNjZDAxZDgiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njk3MzA1NDEsImV4cCI6MTc2OTczNDE0MSwiaWF0IjoxNzY5NzMwNTQxLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.LJ4jlXACjxlyxIpE8kcfYf601MZ5Aof2dgY_gKkKyw8
+[2026-01-29 15:49:32] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-29 15:49:32] [INF] Added WorkGroup with ID: 2
+[2026-01-29 15:49:32] [INF] MongoDB Test Log: Added entity at "2026-01-29T23:49:32.6406722Z"
+[2026-01-29 15:49:42] [INF] Retrieved all WorkGroup entities

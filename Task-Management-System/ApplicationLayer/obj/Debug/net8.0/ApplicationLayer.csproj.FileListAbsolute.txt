@@ -1,0 +1,17 @@
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.deps.json
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.dll
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\ApplicationLayer.pdb
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\Contract.dll
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\Domain.dll
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\Contract.pdb
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\bin\Debug\net8.0\Domain.pdb
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.AssemblyReference.cache
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfoInputs.cache
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.AssemblyInfo.cs
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\Applicat.033E422A.Up2Date
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.dll
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\refint\ApplicationLayer.dll
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ApplicationLayer.pdb
+C:\Users\Huawei\Desktop\TMS\ApplicationLayer\obj\Debug\net8.0\ref\ApplicationLayer.dll

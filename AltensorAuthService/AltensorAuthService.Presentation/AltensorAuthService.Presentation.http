@@ -1,0 +1,6 @@
+@AltensorAuthService.Presentation_HostAddress = http://localhost:5155
+
+GET {{AltensorAuthService.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

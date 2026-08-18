@@ -1,0 +1,104 @@
+[2026-08-18 03:18:41] [INF] GetAllUsers: TenantId="84cb4113-3096-4698-a53c-69923d611e33"
+[2026-08-18 03:18:43] [ERR] An unhandled exception has occurred while executing the request.
+[2026-08-18 03:23:44] [ERR] [JWT] Auth failed: IDX10500: Signature validation failed. No security keys were provided to validate the signature.
+[2026-08-18 03:24:03] [ERR] [JWT] Auth failed: IDX10500: Signature validation failed. No security keys were provided to validate the signature.
+[2026-08-18 03:26:01] [INF] GetAllUsers: TenantId="84cb4113-3096-4698-a53c-69923d611e33"
+[2026-08-18 03:26:02] [ERR] Failed executing DbCommand (65ms) [Parameters=[@__tenantId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."Email", a."FullName", a."TenantId", a."UserName", a."WorkGroupId", p."Id", p."CreatedAt", p."IsDeleted", p."Points", p."Reason", p."TenantId", p."UpdatedAt", p."UserId"
+FROM "AppUsers" AS a
+LEFT JOIN "PerformancePoints" AS p ON a."Id" = p."UserId"
+WHERE a."TenantId" = @__tenantId_0
+ORDER BY a."Id"
+[2026-08-18 03:26:02] [ERR] An exception occurred while iterating over the results of a query for context type 'Persistence.Data.AppDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "AppUsers" does not exist
+
+POSITION: 209
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "AppUsers" does not exist
+    Position: 209
+    File: parse_relation.c
+    Line: 1449
+    Routine: parserOpenTable
+[2026-08-18 03:26:02] [ERR] An unhandled exception has occurred while executing the request.
+[2026-08-18 03:28:07] [INF] GetAllUsers: TenantId="84cb4113-3096-4698-a53c-69923d611e33"
+[2026-08-18 03:28:08] [ERR] Failed executing DbCommand (18ms) [Parameters=[@__tenantId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedAt", a."Email", a."FullName", a."TenantId", a."UserName", a."WorkGroupId", p."Id", p."CreatedAt", p."IsDeleted", p."Points", p."Reason", p."TenantId", p."UpdatedAt", p."UserId"
+FROM "AppUsers" AS a
+LEFT JOIN "PerformancePoints" AS p ON a."Id" = p."UserId"
+WHERE a."TenantId" = @__tenantId_0
+ORDER BY a."Id"
+[2026-08-18 03:28:08] [ERR] An exception occurred while iterating over the results of a query for context type 'Persistence.Data.AppDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "AppUsers" does not exist
+
+POSITION: 209
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "AppUsers" does not exist
+    Position: 209
+    File: parse_relation.c
+    Line: 1449
+    Routine: parserOpenTable
+[2026-08-18 03:28:08] [ERR] An unhandled exception has occurred while executing the request.
+[2026-08-18 03:31:36] [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AppUsers" (
+    "Id" uuid NOT NULL,
+    "TenantId" uuid NOT NULL,
+    "Email" character varying(256) NOT NULL,
+    "FullName" character varying(256),
+    "UserName" character varying(128),
+    "CreatedAt" timestamp with time zone NOT NULL,
+    "WorkGroupId" uuid,
+    CONSTRAINT "PK_AppUsers" PRIMARY KEY ("Id")
+);
+[2026-08-18 03:57:45] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 03:59:06] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:45] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:47] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:47] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:48] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:48] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:10:48] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:14:42] [ERR] [JWT] Auth failed: IDX10511: Signature validation failed. Keys tried: 'Microsoft.IdentityModel.Tokens.RsaSecurityKey, KeyId: 'altensor-auth-key-1', InternalId: '_v6oXGM8yM9_73mmKrJ78Jj--U3WBIv1N5Qw2VYSSRs'. , KeyId: altensor-auth-key-1
+'. 
+Number of keys in TokenValidationParameters: '0'. 
+Number of keys in Configuration: '0'. 
+Matched key was in 'Configuration'. 
+kid: 'altensor-auth-key-1'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10511 for details.
+[2026-08-18 04:14:53] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:32:33] [INF] Yeni istifadəçi sinxronizasiya edilir: UserId="2f025a8e-b148-45c7-9202-54740f394f3d", TenantId="843d28e4-46ee-44d2-ba44-868f1f016afb", Email='ravan2@gmail.com'
+[2026-08-18 04:32:34] [INF] İstifadəçi uğurla sinxronizasiya edildi: UserId="2f025a8e-b148-45c7-9202-54740f394f3d"
+[2026-08-18 04:32:51] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:32:59] [INF] GetAllUsers: TenantId="b6af2813-6f2b-4380-97d8-a13e31d8f0b3"
+[2026-08-18 04:36:35] [INF] Yeni istifadəçi sinxronizasiya edilir: UserId="e2d6bb85-4f57-4222-a378-9a1c036bcd9c", TenantId="843d28e4-46ee-44d2-ba44-868f1f016afb", Email='salam1@gmail.com'
+[2026-08-18 04:36:36] [INF] İstifadəçi uğurla sinxronizasiya edildi: UserId="e2d6bb85-4f57-4222-a378-9a1c036bcd9c"
+[2026-08-18 04:36:52] [INF] GetAllUsers: TenantId="843d28e4-46ee-44d2-ba44-868f1f016afb"

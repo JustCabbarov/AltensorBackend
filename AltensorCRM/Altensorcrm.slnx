@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Altensorcrm.Api/Altensorcrm.Api.csproj" />
+  <Project Path="Altensorcrm.Application/Altensorcrm.Application.csproj" />
+  <Project Path="Altensorcrm.Contract/Altensorcrm.Contract.csproj" />
+  <Project Path="Altensorcrm.Domain/Altensorcrm.Domain.csproj" />
+  <Project Path="Altensorcrm.Infrastructure/Altensorcrm.Infrastructure.csproj" />
+  <Project Path="Altensorcrm.Persistence/Altensorcrm.Persistence.csproj" />
+</Solution>

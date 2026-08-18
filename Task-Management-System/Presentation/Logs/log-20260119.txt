@@ -1,0 +1,97 @@
+[2026-01-19 04:47:14] [FTL] Application startup exception
+[2026-01-19 04:47:14] [ERR] Hosting failed to start
+[2026-01-19 04:48:37] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 04:48:37] [ERR] NotFoundException occurred: User not found.
+[2026-01-19 05:02:01] [INF] New user registered: licabbarov1@gmail.com
+[2026-01-19 05:02:20] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 05:02:20] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI2Y2MxYjI1Zi1kYjc3LTRlOWEtYTMxYS00MmNhYmMyNDdkODYiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiVXNlciIsIm5iZiI6MTc2ODgyNzc0MCwiZXhwIjoxNzY4ODMxMzQwLCJpYXQiOjE3Njg4Mjc3NDAsImlzcyI6IlRhc2tNYW5hZ2VyIiwiYXVkIjoiVGFza01hbmFhZ2VyIn0.Hq9E04-Dc9GfZRJR2s_oaPh2AegX_wlaN2EYUNRNlaY
+[2026-01-19 05:04:34] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 05:04:34] [ERR] An unhandled exception occurred: User tapılmadı
+[2026-01-19 05:11:35] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 05:11:35] [ERR] An unhandled exception occurred: Kod yanlışdır və ya müddəti bitib
+[2026-01-19 05:13:03] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 05:13:09] [ERR] An unhandled exception occurred: Kod yanlışdır və ya müddəti bitib
+[2026-01-19 05:17:40] [WRN] Invalid login attempt for user: licabbarov1@gmail.com
+[2026-01-19 05:17:40] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 05:17:41] [ERR] An unhandled exception occurred: Invalid login attempt 
+[2026-01-19 05:17:49] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 05:17:49] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI2Y2MxYjI1Zi1kYjc3LTRlOWEtYTMxYS00MmNhYmMyNDdkODYiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiVXNlciIsIm5iZiI6MTc2ODgyODY2OSwiZXhwIjoxNzY4ODMyMjY5LCJpYXQiOjE3Njg4Mjg2NjksImlzcyI6IlRhc2tNYW5hZ2VyIiwiYXVkIjoiVGFza01hbmFhZ2VyIn0.gNc3d2lwNjA8c5rM8uHgTxQjYlFHlMwewPcxl8Jb-8s
+[2026-01-19 05:28:52] [ERR] Failed executing DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+[2026-01-19 05:30:41] [ERR] Failed executing DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+[2026-01-19 08:24:13] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:24:13] [ERR] An unhandled exception occurred: Unable to determine the relationship represented by navigation 'ApplicationUser.AssignedTasks' of type 'ICollection<TaskItem>'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+[2026-01-19 08:24:49] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:24:49] [ERR] An unhandled exception occurred: Unable to determine the relationship represented by navigation 'ApplicationUser.AssignedTasks' of type 'ICollection<TaskItem>'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+[2026-01-19 08:24:52] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:24:52] [ERR] An unhandled exception occurred: Unable to determine the relationship represented by navigation 'ApplicationUser.AssignedTasks' of type 'ICollection<TaskItem>'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+[2026-01-19 08:25:49] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:43:14] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:49:44] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:50:57] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:53:44] [INF] New user registered: licabbarov1@gmail.com
+[2026-01-19 08:54:42] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-19 08:54:42] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 08:55:46] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-19 08:55:48] [ERR] An exception occurred in the database while saving changes for context type 'Persistence.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Tasks_AspNetUsers_AssignedToUserId". The conflict occurred in database "TaskManager", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7955de61-08c9-45ea-a224-861074dde93d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-19 08:55:48] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-19 09:57:51] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 09:57:51] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDU0NzEsImV4cCI6MTc2ODg0OTA3MSwiaWF0IjoxNzY4ODQ1NDcxLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.hIb5HXHq2VzUM2WNIZJ-Xsr_s7tSdFYWdPiONYK2R7M
+[2026-01-19 10:56:45] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 10:56:45] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDkwMDUsImV4cCI6MTc2ODg1MjYwNSwiaWF0IjoxNzY4ODQ5MDA1LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.9rawaFLWDu_sag9pfdp_bPxXk-gjHAtFphVyJP9k4KI
+[2026-01-19 11:01:03] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:01:03] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDkyNjMsImV4cCI6MTc2ODg1Mjg2MywiaWF0IjoxNzY4ODQ5MjYzLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.gHjHkyh9Jk23rRQwcKLo9e77EQzEgoedqOl9VHg65zY
+[2026-01-19 11:04:14] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:04:14] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDk0NTQsImV4cCI6MTc2ODg1MzA1NCwiaWF0IjoxNzY4ODQ5NDU0LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.Rga_Y-aTSDslZRcZPf1HLf_MwUCw8LSwsw3_H9k4A8s
+[2026-01-19 11:07:04] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:07:04] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDk2MjQsImV4cCI6MTc2ODg1MzIyNCwiaWF0IjoxNzY4ODQ5NjI0LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.E1xX0TgwYKtR3cXbHsWVhOcVvp60bhjhq5o4zRQVFWI
+[2026-01-19 11:08:55] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:08:55] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDk3MzUsImV4cCI6MTc2ODg1MzMzNSwiaWF0IjoxNzY4ODQ5NzM1LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.EewkafX-CXWVF5BeFl46db9DWS1G3MBQJd9Rosxj3pw
+[2026-01-19 11:13:02] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:13:02] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NDk5ODIsImV4cCI6MTc2ODg1MzU4MiwiaWF0IjoxNzY4ODQ5OTgyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.zL4_1xqrN1ojskiWN1UKJUKIvlb0Vh9l2ExOJroqeY0
+[2026-01-19 11:15:59] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:15:59] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NTAxNTksImV4cCI6MTc2ODg1Mzc1OSwiaWF0IjoxNzY4ODUwMTU5LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.8IllETTR-MU9CidK5X-6N0da3FSPzWFnFP5TCOYPSG4
+[2026-01-19 11:18:20] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:18:20] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NTAzMDAsImV4cCI6MTc2ODg1MzkwMCwiaWF0IjoxNzY4ODUwMzAwLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.HadkpzH8V5Atad3lOYHk8i7KoGL9TV0n4foe9iw2I9w
+[2026-01-19 11:20:53] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-19 11:20:53] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3Njg4NTA0NTMsImV4cCI6MTc2ODg1NDA1MywiaWF0IjoxNzY4ODUwNDUzLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.fb5KnmrsED0NEn3vYd4oTWJS7OKl39wpi7-ks9T7qnE

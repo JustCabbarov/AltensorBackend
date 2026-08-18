@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AltensorAuthService.Application/AltensorAuthService.Application.csproj" />
+  <Project Path="AltensorAuthService.Contract/AltensorAuthService.Contract.csproj" />
+  <Project Path="AltensorAuthService.Domain/AltensorAuthService.Domain.csproj" />
+  <Project Path="AltensorAuthService.Persistence/AltensorAuthService.Persistence.csproj" />
+  <Project Path="AltensorAuthService.Presentation/AltensorAuthService.Presentation.csproj" />
+</Solution>

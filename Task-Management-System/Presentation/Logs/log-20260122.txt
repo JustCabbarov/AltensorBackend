@@ -1,0 +1,76 @@
+[2026-01-22 12:16:06] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 12:16:06] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMTI5NjYsImV4cCI6MTc2OTExNjU2NiwiaWF0IjoxNzY5MTEyOTY2LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.E2AhFxRriLMKYfD0dxzuNL35mcDgDNGaM9E6hRqszw4
+[2026-01-22 12:19:56] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 12:19:56] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:20:37] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 12:20:37] [INF] Added TaskComment with ID: 5
+[2026-01-22 12:20:37] [INF] MongoDB Test Log: Added entity at "2026-01-22T20:20:37.3879049Z"
+[2026-01-22 12:21:41] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 12:21:50] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 12:22:22] [INF] Added TaskComment with ID: 6
+[2026-01-22 12:22:22] [INF] MongoDB Test Log: Added entity at "2026-01-22T20:22:22.7007273Z"
+[2026-01-22 12:26:41] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:28:22] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:31:26] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 12:31:28] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:40:38] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:50:24] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:51:28] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 12:51:29] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMTUwODgsImV4cCI6MTc2OTExODY4OCwiaWF0IjoxNzY5MTE1MDg4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.gKjKcMYpuC0861c2bxA89wi_88L2lHtUB8UkoeeNY0A
+[2026-01-22 12:51:59] [INF] Retrieved all TaskItem entities
+[2026-01-22 12:52:28] [INF] User Login in: licabbarov5@gmail.com
+[2026-01-22 12:52:28] [INF] JWT token yaradıldı: licabbarov5@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIzZWExMGEzYS0xMGIzLTRlZTQtODhhYy04OTJmNTliZmQ4Y2QiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3Y1IiwiZW1haWwiOiJsaWNhYmJhcm92NUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMTUxNDgsImV4cCI6MTc2OTExODc0OCwiaWF0IjoxNzY5MTE1MTQ4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.Fp-lfh_KyMFQZlv-t6nkgZlTZ99xE6ViVqIEF5OCDlA
+[2026-01-22 12:52:37] [INF] Retrieved all TaskItem entities
+[2026-01-22 13:28:00] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 13:28:00] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMTcyODAsImV4cCI6MTc2OTEyMDg4MCwiaWF0IjoxNzY5MTE3MjgwLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.SuAYX9-udlPHN0EjAa3YYEkYgKT8FVKU97oHQCd4PfI
+[2026-01-22 13:32:28] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 13:32:28] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMTc1NDgsImV4cCI6MTc2OTEyMTE0OCwiaWF0IjoxNzY5MTE3NTQ4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.h_Sn9BWvOhkXeGv0gZyLyrx6EldIQl2uPd9iC-ZSi-E
+[2026-01-22 14:25:42] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 14:25:42] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjA3NDIsImV4cCI6MTc2OTEyNDM0MiwiaWF0IjoxNzY5MTIwNzQyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.jaQ2gcAQjdUql5WOYaLemVZRP8QRfYp0ifbKHciV4aI
+[2026-01-22 14:29:08] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:29:08] [INF] Retrieved all TaskItem entities
+[2026-01-22 14:30:19] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:30:50] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:31:21] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:31:23] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 14:31:24] [INF] Updated TaskItem with ID: 6
+[2026-01-22 14:31:34] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:33:05] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:33:11] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 14:33:16] [INF] Updated TaskItem with ID: 6
+[2026-01-22 14:36:12] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 14:36:16] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 14:36:16] [INF] Updated TaskItem with ID: 6
+[2026-01-22 14:36:36] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 14:36:39] [INF] Updated TaskItem with ID: 6
+[2026-01-22 14:42:51] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 14:42:51] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjE3NzEsImV4cCI6MTc2OTEyNTM3MSwiaWF0IjoxNzY5MTIxNzcxLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.IE45DTHrK2yO9zxE9ZVBLBo1ATW_UdzeVfimo27WYs4
+[2026-01-22 14:55:41] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-22 14:56:25] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-22 14:59:38] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 14:59:38] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjI3NzgsImV4cCI6MTc2OTEyNjM3OCwiaWF0IjoxNzY5MTIyNzc4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.mDerhbAmQK_j6UDhi13bKXjIQCSOvynAw3cU7Qf7sRE
+[2026-01-22 15:19:58] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 15:19:58] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjM5OTgsImV4cCI6MTc2OTEyNzU5OCwiaWF0IjoxNzY5MTIzOTk4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.Ma_k_rVFO5OqyapcoR-OF3x5CDPKhXF1t4iNNXyRESc
+[2026-01-22 15:25:40] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 15:25:40] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjQzNDAsImV4cCI6MTc2OTEyNzk0MCwiaWF0IjoxNzY5MTI0MzQwLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.Rj8HHPkiHTUy2wyPHLNe4G9m8nJ77oNOQGOZJzU4bOg
+[2026-01-22 15:36:34] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 15:36:34] [INF] Retrieved all TaskItem entities
+[2026-01-22 15:36:55] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:36:55] [INF] Updated TaskItem with ID: 6
+[2026-01-22 15:37:10] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:37:10] [INF] Updated TaskItem with ID: 6
+[2026-01-22 15:37:55] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:37:55] [INF] Added TaskComment with ID: 7
+[2026-01-22 15:37:55] [INF] MongoDB Test Log: Added entity at "2026-01-22T23:37:55.5826400Z"
+[2026-01-22 15:37:57] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:37:57] [INF] Added TaskComment with ID: 8
+[2026-01-22 15:37:57] [INF] MongoDB Test Log: Added entity at "2026-01-22T23:37:57.1360992Z"
+[2026-01-22 15:46:34] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-22 15:46:40] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:46:45] [INF] Added TaskComment with ID: 9
+[2026-01-22 15:46:45] [INF] MongoDB Test Log: Added entity at "2026-01-22T23:46:45.8075488Z"
+[2026-01-22 15:49:28] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-22 15:49:28] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkxMjU3NjgsImV4cCI6MTc2OTEyOTM2OCwiaWF0IjoxNzY5MTI1NzY4LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.gl3CDnJmYo5BbvyhFulVjOqcihXh6HThhb2P5rordQY
+[2026-01-22 15:49:48] [INF] Retrieved TaskItem with ID: 6
+[2026-01-22 15:49:48] [INF] Added TaskComment with ID: 10
+[2026-01-22 15:49:48] [INF] MongoDB Test Log: Added entity at "2026-01-22T23:49:48.3872482Z"

@@ -1,0 +1,6 @@
+@Altensorcrm.Api_HostAddress = http://localhost:5286
+
+GET {{Altensorcrm.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

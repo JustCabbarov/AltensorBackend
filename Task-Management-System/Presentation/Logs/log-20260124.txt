@@ -1,0 +1,174 @@
+[2026-01-24 01:04:52] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:04:52] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDU0OTIsImV4cCI6MTc2OTI0OTA5MiwiaWF0IjoxNzY5MjQ1NDkyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.t6o5vBdjMnj4AEqzh439XLuXmzqw7cPCtSpVOo1udlY
+[2026-01-24 01:06:01] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:06:12] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:11:50] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:11:50] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDU5MTAsImV4cCI6MTc2OTI0OTUxMCwiaWF0IjoxNzY5MjQ1OTEwLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.MNaUvpM_18oQfhhgfqd5QoRxGornFWql9s4SSGmDkkY
+[2026-01-24 01:12:20] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:14:24] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:14:42] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:14:42] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDYwODIsImV4cCI6MTc2OTI0OTY4MiwiaWF0IjoxNzY5MjQ2MDgyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.9e4vkr1rBICYgJbGcGA1v5EN_lDQitD9q0i1O-isA8M
+[2026-01-24 01:15:07] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:16:25] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:16:25] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDYxODUsImV4cCI6MTc2OTI0OTc4NSwiaWF0IjoxNzY5MjQ2MTg1LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.hFVTeizLngijqeF5tOgzCOMhyfD2A5AMEZegAutBAnA
+[2026-01-24 01:19:06] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:19:06] [ERR] An exception occurred in the database while saving changes for context type 'Persistence.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY SAME TABLE constraint "FK_Tasks_Tasks_ParentTaskId". The conflict occurred in database "TaskManager", table "dbo.Tasks", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:5b40032e-148a-4c9d-bec1-bce83745f28d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-24 01:19:06] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:19:26] [INF] Added TaskItem with ID: 13
+[2026-01-24 01:19:26] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:19:26.6361825Z"
+[2026-01-24 01:19:38] [INF] Added TaskItem with ID: 14
+[2026-01-24 01:19:38] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:19:38.6543782Z"
+[2026-01-24 01:20:50] [INF] Retrieved TaskItem with ID: 14
+[2026-01-24 01:20:50] [ERR] An exception occurred in the database while saving changes for context type 'Persistence.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TaskComments_AspNetUsers_UserId". The conflict occurred in database "TaskManager", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:5b40032e-148a-4c9d-bec1-bce83745f28d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-24 01:20:50] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:22:41] [INF] Retrieved TaskItem with ID: 14
+[2026-01-24 01:22:41] [INF] Added TaskComment with ID: 12
+[2026-01-24 01:22:41] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:22:41.7935076Z"
+[2026-01-24 01:22:55] [INF] Retrieved TaskItem with ID: 14
+[2026-01-24 01:22:55] [INF] Added TaskComment with ID: 13
+[2026-01-24 01:22:55] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:22:55.1835000Z"
+[2026-01-24 01:23:35] [INF] Retrieved TaskItem with ID: 9
+[2026-01-24 01:23:35] [ERR] An exception occurred in the database while saving changes for context type 'Persistence.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Tasks_AspNetUsers_AssignedToUserId". The conflict occurred in database "TaskManager", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:5b40032e-148a-4c9d-bec1-bce83745f28d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-24 01:23:35] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:24:35] [INF] Retrieved TaskItem with ID: 9
+[2026-01-24 01:24:35] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:25:08] [INF] Retrieved TaskItem with ID: 10
+[2026-01-24 01:25:08] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 01:25:14] [INF] Retrieved TaskItem with ID: 14
+[2026-01-24 01:25:14] [INF] Updated TaskItem with ID: 14
+[2026-01-24 01:30:52] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:30:52] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDcwNTIsImV4cCI6MTc2OTI1MDY1MiwiaWF0IjoxNzY5MjQ3MDUyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.U4AOpd9nm3zhrmjR8Yn4F6R9d8AH8oUATqk4DETMLbQ
+[2026-01-24 01:31:13] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:31:13] [INF] Added TaskItem with ID: 15
+[2026-01-24 01:31:13] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:31:13.7752756Z"
+[2026-01-24 01:31:54] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:31:54] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDcxMTQsImV4cCI6MTc2OTI1MDcxNCwiaWF0IjoxNzY5MjQ3MTE0LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.uF8Gz6F3FI4-HRGCVVwaudy6lhNjWzUtG_ga1VhPV6M
+[2026-01-24 01:33:16] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:33:25] [INF] Added TaskItem with ID: 16
+[2026-01-24 01:33:26] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:33:26.0583734Z"
+[2026-01-24 01:35:06] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:35:06] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDczMDYsImV4cCI6MTc2OTI1MDkwNiwiaWF0IjoxNzY5MjQ3MzA2LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.keDdOsoUbo8MJwVSOK19GNuYDwxT3ySIqXO2U10xlPc
+[2026-01-24 01:36:36] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:36:39] [INF] Added TaskItem with ID: 17
+[2026-01-24 01:36:39] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:36:39.2997326Z"
+[2026-01-24 01:38:36] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:38:36] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDc1MTYsImV4cCI6MTc2OTI1MTExNiwiaWF0IjoxNzY5MjQ3NTE2LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.lxCwh4Qd7CbyL6wm3_NPiJOJ0ykstpS2fuen2_XsCBY
+[2026-01-24 01:40:08] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:40:12] [INF] Added TaskItem with ID: 18
+[2026-01-24 01:40:12] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:40:12.4105608Z"
+[2026-01-24 01:42:52] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:42:52] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDc3NzIsImV4cCI6MTc2OTI1MTM3MiwiaWF0IjoxNzY5MjQ3NzcyLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.zOQQFj6CaYbLhLuGF9uq6M4SO8viOBblWQnQbUeooDM
+[2026-01-24 01:43:36] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:43:40] [INF] Added TaskItem with ID: 19
+[2026-01-24 01:43:40] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:43:40.3225596Z"
+[2026-01-24 01:57:29] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 01:57:29] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNDg2NDksImV4cCI6MTc2OTI1MjI0OSwiaWF0IjoxNzY5MjQ4NjQ5LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.3kAm8dNOBxk7btjU3sT1QivMmuD2TtKsiPfLbeDy0kA
+[2026-01-24 01:58:47] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 01:58:48] [INF] Added TaskItem with ID: 20
+[2026-01-24 01:58:48] [INF] MongoDB Test Log: Added entity at "2026-01-24T09:58:48.0370017Z"
+[2026-01-24 02:05:20] [ERR] An unhandled exception has occurred while executing the request.
+[2026-01-24 03:51:17] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 03:51:17] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNTU0NzcsImV4cCI6MTc2OTI1OTA3NywiaWF0IjoxNzY5MjU1NDc3LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.YP4PtxybHdQSTRh2Fbriw1K6Qezw_a-6rt31b3GEAbk
+[2026-01-24 03:51:28] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 03:51:28] [INF] Retrieved all TaskItem entities
+[2026-01-24 03:51:30] [INF] Retrieved TaskItem with ID: 6
+[2026-01-24 03:51:31] [INF] Retrieved TaskItem with ID: 7
+[2026-01-24 03:51:31] [INF] Retrieved TaskItem with ID: 7
+[2026-01-24 03:51:33] [INF] Retrieved TaskItem with ID: 15
+[2026-01-24 03:51:33] [INF] Retrieved TaskItem with ID: 15
+[2026-01-24 03:51:34] [INF] Retrieved TaskItem with ID: 13
+[2026-01-24 03:51:35] [INF] Retrieved TaskItem with ID: 11
+[2026-01-24 06:06:57] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 06:06:57] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNjM2MTcsImV4cCI6MTc2OTI2NzIxNywiaWF0IjoxNzY5MjYzNjE3LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9._W5213M1Z80kKX63zRV5RR2dHSxKQnCz_QAbuT5xobM
+[2026-01-24 06:10:07] [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+[2026-01-24 06:10:07] [INF] Added TaskItem with ID: 21
+[2026-01-24 06:10:07] [INF] MongoDB Test Log: Added entity at "2026-01-24T14:10:07.9165166Z"
+[2026-01-24 06:50:17] [INF] Added TaskItem with ID: 22
+[2026-01-24 06:50:17] [INF] MongoDB Test Log: Added entity at "2026-01-24T14:50:17.7064718Z"
+[2026-01-24 06:52:20] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 06:52:20] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNjYzNDAsImV4cCI6MTc2OTI2OTk0MCwiaWF0IjoxNzY5MjY2MzQwLCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.is6_8wPYUNWybvsIvvGrH9LhbohfBSCVJAcIkTZtSAE
+[2026-01-24 06:53:39] [INF] Added TaskItem with ID: 23
+[2026-01-24 06:53:39] [INF] MongoDB Test Log: Added entity at "2026-01-24T14:53:39.6558354Z"
+[2026-01-24 07:25:05] [INF] User Login in: licabbarov1@gmail.com
+[2026-01-24 07:25:05] [INF] JWT token yaradıldı: licabbarov1@gmail.com, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyOGZlNmNjNS0zNDNiLTQzOTMtOTJkNi01OTFkN2FhNzJkMDMiLCJ1bmlxdWVfbmFtZSI6ImxpY2FiYmFyb3YxIiwiZW1haWwiOiJsaWNhYmJhcm92MUBnbWFpbC5jb20iLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3NjkyNjgzMDUsImV4cCI6MTc2OTI3MTkwNSwiaWF0IjoxNzY5MjY4MzA1LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hYWdlciJ9.d0_JRbFPaq6TuWAj-zzHi7eAQEqeEmpnDiFNE3GlYTc
