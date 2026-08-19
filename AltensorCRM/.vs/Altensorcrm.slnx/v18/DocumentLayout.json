@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorcrm\\altensorcrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|solutionrelative:altensorcrm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorcrm\\altensorcrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|solutionrelative:altensorcrm.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC638C00-2B63-88FC-9778-80AF95E15078}|Altensorcrm.Persistence\\Altensorcrm.Persistence.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorcrm\\altensorcrm.persistence\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC638C00-2B63-88FC-9778-80AF95E15078}|Altensorcrm.Persistence\\Altensorcrm.Persistence.csproj|solutionrelative:altensorcrm.persistence\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorcrm\\altensorcrm.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69F6F7E4-5199-F7A5-D2C5-823FB037346E}|Altensorcrm.Api\\Altensorcrm.Api.csproj|solutionrelative:altensorcrm.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC638C00-2B63-88FC-9778-80AF95E15078}|Altensorcrm.Persistence\\Altensorcrm.Persistence.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorcrm\\altensorcrm.persistence\\migrations\\20260818175245_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC638C00-2B63-88FC-9778-80AF95E15078}|Altensorcrm.Persistence\\Altensorcrm.Persistence.csproj|solutionrelative:altensorcrm.persistence\\migrations\\20260818175245_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Altensorcrm.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\Program.cs",
+              "RelativeToolTip": "Altensorcrm.Api\\Program.cs",
+              "ViewState": "AgIAAG0AAAAAzczMzAwswHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T18:27:13.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Persistence\\Data\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Altensorcrm.Persistence\\Data\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Persistence\\Data\\AppDbContextFactory.cs",
+              "RelativeToolTip": "Altensorcrm.Persistence\\Data\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T17:57:35.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20260818175245_init.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Persistence\\Migrations\\20260818175245_init.cs",
+              "RelativeDocumentMoniker": "Altensorcrm.Persistence\\Migrations\\20260818175245_init.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Persistence\\Migrations\\20260818175245_init.cs",
+              "RelativeToolTip": "Altensorcrm.Persistence\\Migrations\\20260818175245_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T17:52:46.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Altensorcrm.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\appsettings.Development.json",
+              "RelativeToolTip": "Altensorcrm.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAEAAACgmpmZmZkewAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-18T17:48:18.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Altensorcrm.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorCRM\\Altensorcrm.Api\\appsettings.json",
+              "RelativeToolTip": "Altensorcrm.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-18T17:44:37.045Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\bin\Release\net8.0\AltensorAuthService.Contract.deps.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\bin\Release\net8.0\AltensorAuthService.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\bin\Release\net8.0\AltensorAuthService.Contract.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.sourcelink.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\refint\AltensorAuthService.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\AltensorAuthService.Contract.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Contract\obj\Release\net8.0\ref\AltensorAuthService.Contract.dll

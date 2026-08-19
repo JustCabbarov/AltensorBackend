@@ -48,3 +48,16 @@ C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensor
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\refint\Altensorcrm.Domain.dll
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.pdb
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\ref\Altensorcrm.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.deps.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.sourcelink.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\refint\Altensorcrm.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\ref\Altensorcrm.Domain.dll

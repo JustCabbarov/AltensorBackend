@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "AutoMapper/16.0.0": {
@@ -167,6 +167,25 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.Bcl.Cryptography/10.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "10.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Bcl.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Bcl.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
@@ -953,7 +972,7 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Abstractions/8.14.0": {
+      "Microsoft.IdentityModel.Abstractions/8.22.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -966,10 +985,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/8.14.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/8.22.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "8.14.0"
+          "Microsoft.IdentityModel.Tokens": "8.22.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
@@ -982,10 +1001,10 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/8.14.0": {
+      "Microsoft.IdentityModel.Logging/8.22.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.14.0"
+          "Microsoft.IdentityModel.Abstractions": "8.22.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Logging.dll": {
@@ -1032,11 +1051,12 @@
           }
         }
       },
-      "Microsoft.IdentityModel.Tokens/8.14.0": {
+      "Microsoft.IdentityModel.Tokens/8.22.0": {
         "type": "package",
         "dependencies": {
+          "Microsoft.Bcl.Cryptography": "10.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.IdentityModel.Logging": "8.14.0"
+          "Microsoft.IdentityModel.Logging": "8.22.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.IdentityModel.Tokens.dll": {
@@ -1603,7 +1623,7 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.2": {
+      "System.Formats.Asn1/10.0.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Formats.Asn1.dll": {
@@ -1616,14 +1636,14 @@
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.IdentityModel.Tokens.Jwt/7.1.2": {
+      "System.IdentityModel.Tokens.Jwt/8.22.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "7.1.2",
-          "Microsoft.IdentityModel.Tokens": "7.1.2"
+          "Microsoft.IdentityModel.JsonWebTokens": "8.22.0",
+          "Microsoft.IdentityModel.Tokens": "8.22.0"
         },
         "compile": {
           "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
@@ -2257,6 +2277,37 @@
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
         "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Bcl.Cryptography/10.0.2": {
+      "sha512": "LG9Yll3B5aNpxv0+D47g6LiOiKBIlodhcHdQwcYzo8VeexFLGqx5ymetmA2aBRyo9cCcWsQWrFsdbsr8LvmWDw==",
+      "type": "package",
+      "path": "microsoft.bcl.cryptography/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Bcl.Cryptography.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Bcl.Cryptography.targets",
+        "lib/net10.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net10.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/net462/Microsoft.Bcl.Cryptography.dll",
+        "lib/net462/Microsoft.Bcl.Cryptography.xml",
+        "lib/net8.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net8.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/net9.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/net9.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.Cryptography.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.Cryptography.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.Cryptography.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.Cryptography.xml",
+        "microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
+        "microsoft.bcl.cryptography.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -3681,14 +3732,16 @@
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Abstractions/8.14.0": {
-      "sha512": "iwbCpSjD3ehfTwBhtSNEtKPK0ICun6ov7Ibx6ISNA9bfwIyzI2Siwyi9eJFCJBwxowK9xcA1mj+jBWiigeqgcQ==",
+    "Microsoft.IdentityModel.Abstractions/8.22.0": {
+      "sha512": "LU3V3owsu4vGpCg2kyL7SsQEuHwcoJ8FSNBqzLADzCf3/PcKUTcx5Plsd51DoTJMfK/WigXV/03UhaN5JXE6uQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.abstractions/8.14.0",
+      "path": "microsoft.identitymodel.abstractions/8.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
@@ -3701,18 +3754,20 @@
         "lib/net9.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-        "microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.abstractions.8.22.0.nupkg.sha512",
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/8.14.0": {
-      "sha512": "4jOpiA4THdtpLyMdAb24dtj7+6GmvhOhxf5XHLYWmPKF8ApEnApal1UnJsKO4HxUWRXDA6C4WQVfYyqsRhpNpQ==",
+    "Microsoft.IdentityModel.JsonWebTokens/8.22.0": {
+      "sha512": "kv6peMLjALZLDAy2H3F77KjVRdwiscn2p/g3ui2chcbuEcAX2MpAbyDcYnJ7Vyh8jZ1aJWrniUMCDWoOgnu4NQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/8.14.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net10.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net462/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll",
@@ -3725,18 +3780,20 @@
         "lib/net9.0/Microsoft.IdentityModel.JsonWebTokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.jsonwebtokens.8.22.0.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Logging/8.14.0": {
-      "sha512": "eqqnemdW38CKZEHS6diA50BV94QICozDZEvSrsvN3SJXUFwVB9gy+/oz76gldP7nZliA16IglXjXTCTdmU/Ejg==",
+    "Microsoft.IdentityModel.Logging/8.22.0": {
+      "sha512": "G9Tl0yXSlr2pkXv4EpXjO16M4q6oo9N/od+gNyOusZ8yM8LZg1H3f/QOMFuOJiV6znzY5MkAREU97JRRnqpEQw==",
       "type": "package",
-      "path": "microsoft.identitymodel.logging/8.14.0",
+      "path": "microsoft.identitymodel.logging/8.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Logging.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Logging.xml",
         "lib/net462/Microsoft.IdentityModel.Logging.dll",
         "lib/net462/Microsoft.IdentityModel.Logging.xml",
         "lib/net472/Microsoft.IdentityModel.Logging.dll",
@@ -3749,7 +3806,7 @@
         "lib/net9.0/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.logging.8.22.0.nupkg.sha512",
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -3799,14 +3856,16 @@
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.Tokens/8.14.0": {
-      "sha512": "lKIZiBiGd36k02TCdMHp1KlNWisyIvQxcYJvIkz7P4gSQ9zi8dgh6S5Grj8NNG7HWYIPfQymGyoZ6JB5d1Lo1g==",
+    "Microsoft.IdentityModel.Tokens/8.22.0": {
+      "sha512": "i4lywKKUuVmheCUA+w/q8QNPReNI0qanHI9hhz48AFqD1ljyb8sxPL2RbXOGiPV13XdJ4kxieL9ukS7tD43LxA==",
       "type": "package",
-      "path": "microsoft.identitymodel.tokens/8.14.0",
+      "path": "microsoft.identitymodel.tokens/8.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "lib/net10.0/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net10.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/net462/Microsoft.IdentityModel.Tokens.dll",
         "lib/net462/Microsoft.IdentityModel.Tokens.xml",
         "lib/net472/Microsoft.IdentityModel.Tokens.dll",
@@ -3819,7 +3878,7 @@
         "lib/net9.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
+        "microsoft.identitymodel.tokens.8.22.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -4562,44 +4621,45 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Formats.Asn1/8.0.2": {
-      "sha512": "yUsFqNGa7tbwm5QOOnOR3VSoh8a0Yki39mTbhOnErdbg8hVSFtrK0EXerj286PXcegiF1LkE7lL++qqMZW5jIQ==",
+    "System.Formats.Asn1/10.0.2": {
+      "sha512": "9Hee6iQ74pDgdRNIL6lO8Vlx2onVWd5aDnqwk4Pvo0h5FklBd7QwcQDKgxeLuhiy0o3ibzUVO0KFQe0/hPXU+Q==",
       "type": "package",
-      "path": "system.formats.asn1/8.0.2",
+      "path": "system.formats.asn1/10.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Formats.Asn1.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets",
+        "lib/net10.0/System.Formats.Asn1.dll",
+        "lib/net10.0/System.Formats.Asn1.xml",
         "lib/net462/System.Formats.Asn1.dll",
         "lib/net462/System.Formats.Asn1.xml",
-        "lib/net6.0/System.Formats.Asn1.dll",
-        "lib/net6.0/System.Formats.Asn1.xml",
-        "lib/net7.0/System.Formats.Asn1.dll",
-        "lib/net7.0/System.Formats.Asn1.xml",
         "lib/net8.0/System.Formats.Asn1.dll",
         "lib/net8.0/System.Formats.Asn1.xml",
+        "lib/net9.0/System.Formats.Asn1.dll",
+        "lib/net9.0/System.Formats.Asn1.xml",
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
-        "system.formats.asn1.8.0.2.nupkg.sha512",
+        "system.formats.asn1.10.0.2.nupkg.sha512",
         "system.formats.asn1.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.IdentityModel.Tokens.Jwt/7.1.2": {
-      "sha512": "Thhbe1peAmtSBFaV/ohtykXiZSOkx59Da44hvtWfIMFofDA3M3LaVyjstACf2rKGn4dEDR2cUpRAZ0Xs/zB+7Q==",
+    "System.IdentityModel.Tokens.Jwt/8.22.0": {
+      "sha512": "CpXGfNhLl6EgYaOC9XYsc1p7Ci9HtAy0soHJDSBNGse647al4tTq9RDr+LQsrF4Ls79Dx7VfzN34km0W4DWPow==",
       "type": "package",
-      "path": "system.identitymodel.tokens.jwt/7.1.2",
+      "path": "system.identitymodel.tokens.jwt/8.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
+        "README.md",
+        "lib/net10.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net10.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net462/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net462/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net472/System.IdentityModel.Tokens.Jwt.dll",
@@ -4608,9 +4668,11 @@
         "lib/net6.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net8.0/System.IdentityModel.Tokens.Jwt.xml",
+        "lib/net9.0/System.IdentityModel.Tokens.Jwt.dll",
+        "lib/net9.0/System.IdentityModel.Tokens.Jwt.xml",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+        "system.identitymodel.tokens.jwt.8.22.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
@@ -5367,27 +5429,28 @@
       "Serilog >= 4.3.0",
       "Serilog.AspNetCore >= 10.0.0",
       "Serilog.Settings.Configuration >= 10.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "System.IdentityModel.Tokens.Jwt >= 8.22.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Huawei\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5400,16 +5463,17 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
-              "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj"
+            "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj"
             },
-            "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj": {
-              "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj"
+            "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj"
             },
-            "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj"
+            "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -5424,10 +5488,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
@@ -5455,6 +5520,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
+          },
+          "System.IdentityModel.Tokens.Jwt": {
+            "target": "Package",
+            "version": "[8.22.0, )"
           }
         },
         "imports": [
@@ -5471,19 +5540,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
+            "version": "[8.0.30, 8.0.30]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.27, 8.0.27]"
+            "version": "[8.0.30, 8.0.30]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
+            "version": "[8.0.30, 8.0.30]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.27, 8.0.27]"
+            "version": "[8.0.30, 8.0.30]"
           }
         ],
         "frameworkReferences": {
@@ -5494,7 +5563,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

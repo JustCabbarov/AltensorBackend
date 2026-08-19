@@ -52,7 +52,7 @@ namespace AltensorAuthService.Persistence.Repositories
 
         public async Task<bool> EmailExistsInTenantAsync(string email, Guid tenantId)
         {
-            var normalizedEmail = email.Trim().ToUpper();
+            var normalizedEmail = email.Trim().ToUpperInvariant();
             return await _context.Users
                 .AnyAsync(u => u.NormalizedEmail == normalizedEmail && u.TenantId == tenantId);
         }
@@ -66,7 +66,7 @@ namespace AltensorAuthService.Persistence.Repositories
 
         public async Task<ApplicationUser?> GetByEmailAndTenantAsync(string email, Guid tenantId)
         {
-            var normalizedEmail = email.Trim().ToUpper();
+            var normalizedEmail = email.Trim().ToUpperInvariant();
             return await _context.Users
                 .Include(u => u.Tenant)
                 .FirstOrDefaultAsync(u => u.NormalizedEmail == normalizedEmail && u.TenantId == tenantId);

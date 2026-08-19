@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\bin\Release\net8.0\Altensorcrm.Contract.deps.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\bin\Release\net8.0\Altensorcrm.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\bin\Release\net8.0\Altensorcrm.Contract.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\bin\Release\net8.0\Altensorcrm.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\bin\Release\net8.0\Altensorcrm.Domain.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.sourcelink.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensor.F5CE2681.Up2Date
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\refint\Altensorcrm.Contract.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\Altensorcrm.Contract.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorCRM\Altensorcrm.Contract\obj\Release\net8.0\ref\Altensorcrm.Contract.dll

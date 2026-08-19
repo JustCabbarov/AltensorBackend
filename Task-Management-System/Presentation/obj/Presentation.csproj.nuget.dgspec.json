@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj",
-        "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj"
               },
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -52,7 +52,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -86,15 +86,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -102,24 +102,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj",
         "projectName": "Contract",
-        "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -135,8 +135,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj"
               }
             }
           }
@@ -151,7 +151,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -171,15 +171,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -187,24 +187,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -232,7 +232,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -258,15 +258,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -274,24 +274,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -307,11 +307,11 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj"
               },
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Domain\\Domain.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Domain\\Domain.csproj"
               }
             }
           }
@@ -326,7 +326,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -372,15 +372,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -388,24 +388,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Presentation\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -421,14 +421,14 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\ApplicationLayer\\Application.csproj"
               },
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Contract\\Contract.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Contract\\Contract.csproj"
               },
-              "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\Task-Management-System\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -443,7 +443,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -475,6 +475,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.22.0, )"
             }
           },
           "imports": [
@@ -491,19 +495,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
+              "version": "[8.0.30, 8.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -514,7 +518,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

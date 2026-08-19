@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\bin\Release\net8.0\AltensorAuthService.Domain.deps.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\bin\Release\net8.0\AltensorAuthService.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\bin\Release\net8.0\AltensorAuthService.Domain.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.sourcelink.json
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\refint\AltensorAuthService.Domain.dll
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\AltensorAuthService.Domain.pdb
+C:\Users\Administrator\Desktop\AltensorBackend\AltensorAuthService\AltensorAuthService.Domain\obj\Release\net8.0\ref\AltensorAuthService.Domain.dll

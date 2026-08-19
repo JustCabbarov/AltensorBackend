@@ -1,0 +1,3 @@
+C:\inetpub\wwwroot\AltensorAuthService\AltensorAuthService.Contract.dll
+C:\inetpub\wwwroot\AltensorAuthService\AltensorAuthService.Contract.deps.json
+C:\inetpub\wwwroot\AltensorAuthService\AltensorAuthService.Contract.pdb

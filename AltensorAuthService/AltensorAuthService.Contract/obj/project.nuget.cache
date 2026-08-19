@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HW+eCnvYMFM=",
+  "dgSpecHash": "csEKgrYjk/E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Contract\\AltensorAuthService.Contract.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Contract\\AltensorAuthService.Contract.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
-    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
-    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.27\\microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.30\\microsoft.windowsdesktop.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.30\\microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.30\\microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512"
   ],
   "logs": []
 }
