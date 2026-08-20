@@ -1,13 +1,9 @@
 using Contract.Services;
 using Domain.Entities;
 using Domain.Repositories;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ApplicationLayer.Services
@@ -17,26 +13,17 @@ namespace ApplicationLayer.Services
         private readonly IUserRepository _userRepository;
         private readonly IAppUserRepository _appUserRepository;
         private readonly ICurrentTenantService _tenantService;
-        private readonly IHttpClientFactory _httpClientFactory;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IConfiguration _configuration;
         private readonly ILogger<AuthorizationService> _logger;
 
         public AuthorizationService(
             IUserRepository userRepository,
             IAppUserRepository appUserRepository,
             ICurrentTenantService tenantService,
-            IHttpClientFactory httpClientFactory,
-            IHttpContextAccessor httpContextAccessor,
-            IConfiguration configuration,
             ILogger<AuthorizationService> logger)
         {
             _userRepository = userRepository;
             _appUserRepository = appUserRepository;
             _tenantService = tenantService;
-            _httpClientFactory = httpClientFactory;
-            _httpContextAccessor = httpContextAccessor;
-            _configuration = configuration;
             _logger = logger;
         }
 
@@ -45,47 +32,23 @@ namespace ApplicationLayer.Services
             var tenantId = _tenantService.TenantId
                 ?? throw new UnauthorizedAccessException("Tenant konteksti tapılmadı.");
 
-            // Auth Service-dən müştərinin bütün istifadəçilərini canlı çəkib TMS bazasına sinxronlaşdır
-            try
+            // Daxil olmuş cari istifadəçini bazada yarad/yenilə
+            if (_tenantService.UserId.HasValue && _tenantService.UserId.Value != Guid.Empty)
             {
-                var authHeader = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].ToString();
-                if (!string.IsNullOrEmpty(authHeader))
+                try
                 {
-                    var authBaseUrl = _configuration["AuthService:BaseUrl"] ?? "https://api-info.altensor.com";
-                    var client = _httpClientFactory.CreateClient();
-                    client.DefaultRequestHeaders.Add("Authorization", authHeader);
-
-                    var response = await client.GetAsync($"{authBaseUrl.TrimEnd('/')}/api/Tenant/users");
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var json = await response.Content.ReadAsStringAsync();
-                        using var doc = JsonDocument.Parse(json);
-                        if (doc.RootElement.ValueKind == JsonValueKind.Array)
-                        {
-                            foreach (var item in doc.RootElement.EnumerateArray())
-                            {
-                                var idStr = item.GetProperty("id").GetString();
-                                var email = item.TryGetProperty("email", out var eProp) ? eProp.GetString() : null;
-                                var fullName = item.TryGetProperty("fullName", out var fnProp) ? fnProp.GetString() : null;
-
-                                if (Guid.TryParse(idStr, out var userId) && !string.IsNullOrEmpty(email))
-                                {
-                                    await _appUserRepository.EnsureExistsAsync(
-                                        userId,
-                                        tenantId,
-                                        email,
-                                        fullName ?? email,
-                                        email
-                                    );
-                                }
-                            }
-                        }
-                    }
+                    await _appUserRepository.EnsureExistsAsync(
+                        _tenantService.UserId.Value,
+                        tenantId,
+                        _tenantService.Email ?? "user@system.local",
+                        _tenantService.Email,
+                        _tenantService.Email
+                    );
                 }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogWarning(ex, "Auth Service-dən istifadəçilər sinxronlaşdırılarkən xəbərdarlıq.");
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "Cari istifadəçi sinxronlaşdırılarkən xəbərdarlıq.");
+                }
             }
 
             _logger.LogInformation("GetAllUsers: TenantId={TenantId}", tenantId);
