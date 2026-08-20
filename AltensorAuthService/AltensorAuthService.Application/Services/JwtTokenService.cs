@@ -37,6 +37,7 @@ namespace AltensorAuthService.Application.Services
 
             _rsa = RSA.Create();
             var privateKeyPem = _configuration["Jwt:PrivateKeyPem"];
+            var keyFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "jwt_rsa_private.pem");
 
             if (!string.IsNullOrWhiteSpace(privateKeyPem))
             {
@@ -51,10 +52,37 @@ namespace AltensorAuthService.Application.Services
                     _rsa = RSA.Create(2048);
                 }
             }
+            else if (File.Exists(keyFilePath))
+            {
+                try
+                {
+                    var pemText = File.ReadAllText(keyFilePath);
+                    _rsa.ImportFromPem(pemText.AsSpan());
+                    _logger.LogInformation("RSA açarı fayldan ({FilePath}) uğurla yükləndi. KeyId='{KeyId}'", keyFilePath, _keyId);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "Fayldakı PEM açarını oxuyarkən xəta baş verdi. Yeni RSA açarı generasiya edilir.");
+                    _rsa = RSA.Create(2048);
+                    try
+                    {
+                        File.WriteAllText(keyFilePath, _rsa.ExportPkcs8PrivateKeyPem());
+                    }
+                    catch { }
+                }
+            }
             else
             {
-                _logger.LogInformation("Konfiqurasiyada PEM açarı tapılmadı. Yeni 2048-bit RSA açarı generasiya edildi. KeyId='{KeyId}'", _keyId);
+                _logger.LogInformation("Konfiqurasiyada PEM açarı tapılmadı. Yeni 2048-bit RSA açarı generasiya edildi və fayla yazıldı ({FilePath}). KeyId='{KeyId}'", keyFilePath, _keyId);
                 _rsa = RSA.Create(2048);
+                try
+                {
+                    File.WriteAllText(keyFilePath, _rsa.ExportPkcs8PrivateKeyPem());
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "RSA açarını fayla yazmaq mümkün olmadı.");
+                }
             }
 
             _signingKey = new RsaSecurityKey(_rsa)

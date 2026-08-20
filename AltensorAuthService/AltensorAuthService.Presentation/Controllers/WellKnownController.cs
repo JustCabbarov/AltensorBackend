@@ -21,6 +21,7 @@ namespace AltensorAuthService.Presentation.Controllers
         /// </summary>
         [AllowAnonymous]
         [HttpGet("jwks.json")]
+        [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
         [ProducesResponseType(typeof(JwksDto), StatusCodes.Status200OK)]
         public IActionResult GetJwks()
         {
