@@ -23,6 +23,7 @@ namespace Presentation.Controllers
 
         [Authorize]
         [HttpGet("users")]
+        [HttpGet("AllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
             var users = await _authorizeService.GetAllUsersAsync();
