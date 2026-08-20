@@ -96,6 +96,15 @@ namespace AltensorAuthService.Application.Services
                 {
                     if (!string.IsNullOrWhiteSpace(role.Name))
                     {
+                        if (!await _roleManager.RoleExistsAsync(role.Name))
+                        {
+                            await _roleManager.CreateAsync(new ApplicationRole
+                            {
+                                Name = role.Name,
+                                NormalizedName = role.Name.ToUpperInvariant(),
+                                TenantId = tenantId
+                            });
+                        }
                         await _userManager.AddToRoleAsync(user, role.Name);
                         assignedRoles.Add(role.Name);
                     }
