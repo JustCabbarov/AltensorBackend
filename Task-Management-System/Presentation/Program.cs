@@ -182,6 +182,7 @@ namespace Presentationn
             app.UseAuthorization();
 
             app.MapControllers();
+            app.MapGet("/", () => Results.Ok(new { status = "Altensor TMS API Running", time = DateTime.UtcNow })).AllowAnonymous();
             app.MapHub<NotificationHub>("/hubs/notification");
 
             // ================= Auto Create DB Tables =================
