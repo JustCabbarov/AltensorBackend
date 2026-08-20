@@ -20,6 +20,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewDeals")]
     public async Task<IActionResult> GetPagedList([FromQuery] DealFilterDto filter, CancellationToken cancellationToken)
     {
         var result = await _dealService.GetPagedListAsync(filter, cancellationToken);
@@ -27,6 +28,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewDeals")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _dealService.GetByIdAsync(id, cancellationToken);
@@ -34,6 +36,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateDeals")]
     public async Task<IActionResult> Create([FromBody] CreateDealDto dto, CancellationToken cancellationToken)
     {
         var result = await _dealService.CreateAsync(dto, cancellationToken);
@@ -41,6 +44,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateDeals")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateDealDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -53,6 +57,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpPatch("{id:guid}/stage")]
+    [Authorize(Policy = "CanUpdateDeals")]
     public async Task<IActionResult> UpdateStage(Guid id, [FromQuery] string newStatus, [FromQuery] string? lostReason, CancellationToken cancellationToken)
     {
         DealStatus parsedStatus = DealStatus.Qualification;
@@ -73,6 +78,7 @@ public class DealsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteDeals")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var result = await _dealService.DeleteAsync(id, cancellationToken);

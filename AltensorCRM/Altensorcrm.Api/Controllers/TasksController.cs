@@ -18,6 +18,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpGet("department/{departmentName}")]
+    [Authorize(Policy = "CanViewTasks")]
     public async Task<IActionResult> GetDepartmentTasks(string departmentName, CancellationToken cancellationToken)
     {
         var result = await _taskService.GetDepartmentTasksAsync(departmentName, cancellationToken);
@@ -25,6 +26,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateTasks")]
     public async Task<IActionResult> CreateTask([FromBody] CreateTaskDto dto, CancellationToken cancellationToken)
     {
         var result = await _taskService.CreateTaskAsync(dto, cancellationToken);
@@ -32,6 +34,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpPatch("{taskId:guid}/checklist/{checklistItemId:guid}/toggle")]
+    [Authorize(Policy = "CanUpdateTasks")]
     public async Task<IActionResult> ToggleChecklistItem(Guid taskId, Guid checklistItemId, CancellationToken cancellationToken)
     {
         var result = await _taskService.ToggleChecklistItemAsync(taskId, checklistItemId, cancellationToken);
@@ -39,6 +42,7 @@ public class TasksController : ControllerBase
     }
 
     [HttpPatch("{taskId:guid}/status")]
+    [Authorize(Policy = "CanUpdateTasks")]
     public async Task<IActionResult> UpdateTaskStatus(Guid taskId, [FromQuery] bool isCompleted, CancellationToken cancellationToken)
     {
         var result = await _taskService.UpdateTaskStatusAsync(taskId, isCompleted, cancellationToken);

@@ -25,6 +25,7 @@ public class SettingsController : ControllerBase
     }
 
     [HttpPut]
+    [Authorize(Policy = "CanManageSettings")]
     public async Task<IActionResult> UpdateSettings([FromBody] SystemSettingDto dto, CancellationToken cancellationToken)
     {
         var result = await _settingService.UpdateSettingsAsync(dto, cancellationToken);

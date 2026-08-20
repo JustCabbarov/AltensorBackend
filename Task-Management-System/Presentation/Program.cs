@@ -247,11 +247,13 @@ namespace Presentationn
 
             var app = builder.Build();
 
-            // ================= Nginx Forwarded Headers (HTTPS dəstəyi) =================
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            var forwardedOptions = new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
+            };
+            forwardedOptions.KnownNetworks.Clear();
+            forwardedOptions.KnownProxies.Clear();
+            app.UseForwardedHeaders(forwardedOptions);
 
             app.UseSwagger();
             app.UseSwaggerUI();

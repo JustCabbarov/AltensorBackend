@@ -19,6 +19,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewOrganizations")]
     public async Task<IActionResult> GetPagedList([FromQuery] OrganizationFilterDto filter, CancellationToken cancellationToken)
     {
         var result = await _organizationService.GetPagedListAsync(filter, cancellationToken);
@@ -26,6 +27,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpGet("lookup")]
+    [Authorize(Policy = "CanViewOrganizations")]
     public async Task<IActionResult> GetLookup(CancellationToken cancellationToken)
     {
         var result = await _organizationService.GetLookupAsync(cancellationToken);
@@ -33,6 +35,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewOrganizations")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _organizationService.GetByIdAsync(id, cancellationToken);
@@ -40,6 +43,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateOrganizations")]
     public async Task<IActionResult> Create([FromBody] CreateOrganizationDto dto, CancellationToken cancellationToken)
     {
         var result = await _organizationService.CreateAsync(dto, cancellationToken);
@@ -47,6 +51,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateOrganizations")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateOrganizationDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -59,6 +64,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteOrganizations")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var result = await _organizationService.DeleteAsync(id, cancellationToken);
@@ -66,6 +72,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpGet("{id:guid}/contacts")]
+    [Authorize(Policy = "CanViewOrganizations")]
     public async Task<IActionResult> GetContacts(Guid id, CancellationToken cancellationToken)
     {
         var result = await _organizationService.GetContactsByOrganizationIdAsync(id, cancellationToken);
@@ -73,6 +80,7 @@ public class OrganizationsController : ControllerBase
     }
 
     [HttpGet("{id:guid}/deals")]
+    [Authorize(Policy = "CanViewOrganizations")]
     public async Task<IActionResult> GetDeals(Guid id, CancellationToken cancellationToken)
     {
         var result = await _organizationService.GetDealsByOrganizationIdAsync(id, cancellationToken);

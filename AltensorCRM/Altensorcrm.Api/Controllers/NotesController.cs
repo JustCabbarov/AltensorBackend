@@ -18,6 +18,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewNotes")]
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         var result = await _noteService.GetAllAsync(cancellationToken);
@@ -25,6 +26,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewNotes")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _noteService.GetByIdAsync(id, cancellationToken);
@@ -32,6 +34,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateNotes")]
     public async Task<IActionResult> Create([FromBody] CreateNoteDto dto, CancellationToken cancellationToken)
     {
         var result = await _noteService.CreateAsync(dto, cancellationToken);
@@ -39,6 +42,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateNotes")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateNoteDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -51,6 +55,7 @@ public class NotesController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteNotes")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var result = await _noteService.DeleteAsync(id, cancellationToken);

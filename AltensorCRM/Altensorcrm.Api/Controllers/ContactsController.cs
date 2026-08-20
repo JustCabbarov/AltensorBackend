@@ -19,6 +19,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewContacts")]
     public async Task<IActionResult> GetPagedList([FromQuery] ContactFilterDto filter, CancellationToken cancellationToken)
     {
         var result = await _contactService.GetPagedListAsync(filter, cancellationToken);
@@ -26,6 +27,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpGet("lookup")]
+    [Authorize(Policy = "CanViewContacts")]
     public async Task<IActionResult> GetLookup(CancellationToken cancellationToken)
     {
         var result = await _contactService.GetLookupAsync(cancellationToken);
@@ -33,6 +35,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewContacts")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _contactService.GetByIdAsync(id, cancellationToken);
@@ -40,6 +43,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateContacts")]
     public async Task<IActionResult> Create([FromBody] CreateContactDto dto, CancellationToken cancellationToken)
     {
         var result = await _contactService.CreateAsync(dto, cancellationToken);
@@ -47,6 +51,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateContacts")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateContactDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -59,6 +64,7 @@ public class ContactsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteContacts")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var result = await _contactService.DeleteAsync(id, cancellationToken);

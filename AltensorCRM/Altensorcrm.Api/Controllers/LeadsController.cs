@@ -19,6 +19,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewLeads")]
     public async Task<IActionResult> GetPagedList([FromQuery] LeadFilterDto filter, CancellationToken cancellationToken)
     {
         var result = await _leadService.GetPagedListAsync(filter, cancellationToken);
@@ -26,6 +27,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewLeads")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _leadService.GetByIdAsync(id, cancellationToken);
@@ -33,6 +35,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateLeads")]
     public async Task<IActionResult> Create([FromBody] CreateLeadDto dto, CancellationToken cancellationToken)
     {
         var result = await _leadService.CreateAsync(dto, cancellationToken);
@@ -40,6 +43,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateLeads")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateLeadDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -52,6 +56,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteLeads")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var result = await _leadService.DeleteAsync(id, cancellationToken);
@@ -59,6 +64,7 @@ public class LeadsController : ControllerBase
     }
 
     [HttpPost("{id:guid}/convert-to-deal")]
+    [Authorize(Policy = "CanUpdateLeads")]
     public async Task<IActionResult> ConvertToDeal(Guid id, [FromBody] ConvertLeadToDealDto? dto, CancellationToken cancellationToken)
     {
         dto ??= new ConvertLeadToDealDto(0, null);

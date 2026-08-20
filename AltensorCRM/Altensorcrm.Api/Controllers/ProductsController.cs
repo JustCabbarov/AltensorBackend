@@ -18,6 +18,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Policy = "CanViewProducts")]
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         Console.WriteLine($"[PRODUCTS CONTROLLER] GetAll called at {DateTime.Now:HH:mm:ss}");
@@ -27,6 +28,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [Authorize(Policy = "CanViewProducts")]
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await _productService.GetByIdAsync(id, cancellationToken);
@@ -34,6 +36,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanCreateProducts")]
     public async Task<IActionResult> Create([FromBody] CreateProductDto dto, CancellationToken cancellationToken)
     {
         Console.WriteLine($"[PRODUCTS CONTROLLER] Create called: Name='{dto.ProductName}', Code='{dto.ProductCode}', Rate={dto.StandardSellingRate}");
@@ -43,6 +46,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanUpdateProducts")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateProductDto dto, CancellationToken cancellationToken)
     {
         if (id != dto.Id)
@@ -55,6 +59,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanDeleteProducts")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         Console.WriteLine($"[PRODUCTS CONTROLLER] Delete requested for ID: {id}");
@@ -64,6 +69,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost("upload-image")]
+    [Authorize(Policy = "CanCreateProducts")]
     public async Task<IActionResult> UploadImage(IFormFile file, [FromServices] Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
     {
         if (file == null || file.Length == 0)

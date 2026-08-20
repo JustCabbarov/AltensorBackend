@@ -47,28 +47,71 @@ builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddAltensorAuthentication(builder.Configuration);
 
 // ── 7. Authorization Policies ─────────────────────────────────
+static bool HasPermissionOrAdmin(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext ctx, string permission, string fallbackPerm = "")
+{
+    if (ctx.User.IsInRole("TenantAdmin") || ctx.User.IsInRole("PlatformSuperAdmin") || ctx.User.IsInRole("Admin"))
+        return true;
+
+    if (ctx.User.HasClaim("permissions", permission))
+        return true;
+
+    if (!string.IsNullOrEmpty(fallbackPerm) && ctx.User.HasClaim("permissions", fallbackPerm))
+        return true;
+
+    return false;
+}
+
 builder.Services.AddAuthorization(options =>
 {
     // Module subscription policy
-    options.AddPolicy("CrmModuleAccess", p => p.RequireClaim("modules", "CRM"));
+    options.AddPolicy("CrmModuleAccess", p => p.RequireAssertion(ctx => 
+        ctx.User.HasClaim("modules", "CRM") || ctx.User.HasClaim("modules", "crm")));
 
     // Contacts policies
-    options.AddPolicy("CanViewContacts", p => p.RequireClaim("permissions", "crm.contacts.view"));
-    options.AddPolicy("CanCreateContacts", p => p.RequireClaim("permissions", "crm.contacts.create"));
-    options.AddPolicy("CanUpdateContacts", p => p.RequireClaim("permissions", "crm.contacts.update"));
-    options.AddPolicy("CanDeleteContacts", p => p.RequireClaim("permissions", "crm.contacts.delete"));
+    options.AddPolicy("CanViewContacts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.contacts.view", "crm.read")));
+    options.AddPolicy("CanCreateContacts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.contacts.create", "crm.write")));
+    options.AddPolicy("CanUpdateContacts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.contacts.update", "crm.write")));
+    options.AddPolicy("CanDeleteContacts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.contacts.delete", "crm.delete")));
 
     // Leads policies
-    options.AddPolicy("CanViewLeads", p => p.RequireClaim("permissions", "crm.leads.view"));
-    options.AddPolicy("CanCreateLeads", p => p.RequireClaim("permissions", "crm.leads.create"));
-    options.AddPolicy("CanUpdateLeads", p => p.RequireClaim("permissions", "crm.leads.update"));
-    options.AddPolicy("CanDeleteLeads", p => p.RequireClaim("permissions", "crm.leads.delete"));
+    options.AddPolicy("CanViewLeads", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.leads.view", "crm.read")));
+    options.AddPolicy("CanCreateLeads", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.leads.create", "crm.write")));
+    options.AddPolicy("CanUpdateLeads", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.leads.update", "crm.write")));
+    options.AddPolicy("CanDeleteLeads", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.leads.delete", "crm.delete")));
 
     // Deals policies
-    options.AddPolicy("CanViewDeals", p => p.RequireClaim("permissions", "crm.deals.view"));
-    options.AddPolicy("CanCreateDeals", p => p.RequireClaim("permissions", "crm.deals.create"));
-    options.AddPolicy("CanUpdateDeals", p => p.RequireClaim("permissions", "crm.deals.update"));
-    options.AddPolicy("CanDeleteDeals", p => p.RequireClaim("permissions", "crm.deals.delete"));
+    options.AddPolicy("CanViewDeals", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.deals.view", "crm.read")));
+    options.AddPolicy("CanCreateDeals", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.deals.create", "crm.write")));
+    options.AddPolicy("CanUpdateDeals", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.deals.update", "crm.write")));
+    options.AddPolicy("CanDeleteDeals", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.deals.delete", "crm.delete")));
+
+    // Organizations policies
+    options.AddPolicy("CanViewOrganizations", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.organizations.view", "crm.read")));
+    options.AddPolicy("CanCreateOrganizations", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.organizations.create", "crm.write")));
+    options.AddPolicy("CanUpdateOrganizations", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.organizations.update", "crm.write")));
+    options.AddPolicy("CanDeleteOrganizations", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.organizations.delete", "crm.delete")));
+
+    // Products policies
+    options.AddPolicy("CanViewProducts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.products.view", "crm.read")));
+    options.AddPolicy("CanCreateProducts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.products.create", "crm.write")));
+    options.AddPolicy("CanUpdateProducts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.products.update", "crm.write")));
+    options.AddPolicy("CanDeleteProducts", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.products.delete", "crm.delete")));
+
+    // Tasks policies
+    options.AddPolicy("CanViewTasks", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.tasks.view", "crm.read")));
+    options.AddPolicy("CanCreateTasks", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.tasks.create", "crm.write")));
+    options.AddPolicy("CanUpdateTasks", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.tasks.update", "crm.write")));
+    options.AddPolicy("CanDeleteTasks", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.tasks.delete", "crm.delete")));
+
+    // Notes policies
+    options.AddPolicy("CanViewNotes", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.notes.view", "crm.read")));
+    options.AddPolicy("CanCreateNotes", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.notes.create", "crm.write")));
+    options.AddPolicy("CanUpdateNotes", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.notes.update", "crm.write")));
+    options.AddPolicy("CanDeleteNotes", p => p.RequireAssertion(ctx => HasPermissionOrAdmin(ctx, "crm.notes.delete", "crm.delete")));
+
+    // Settings policy
+    options.AddPolicy("CanManageSettings", p => p.RequireAssertion(ctx => 
+        ctx.User.IsInRole("TenantAdmin") || ctx.User.IsInRole("PlatformSuperAdmin") || ctx.User.IsInRole("Admin") || ctx.User.HasClaim("permissions", "crm.settings.manage")));
 });
 
 // ── 8. CORS ───────────────────────────────────────────────────
@@ -135,10 +178,13 @@ app.UseMiddleware<GlobalExceptionMiddleware>();
     });
 
 
-app.UseForwardedHeaders(new ForwardedHeadersOptions
+var forwardedOptions = new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-});
+};
+forwardedOptions.KnownNetworks.Clear();
+forwardedOptions.KnownProxies.Clear();
+app.UseForwardedHeaders(forwardedOptions);
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

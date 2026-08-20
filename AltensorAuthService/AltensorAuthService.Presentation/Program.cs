@@ -54,10 +54,13 @@ app.UseMiddleware<GlobalExceptionMiddleware>();
 
 // Swagger UI
 app.UseAppSwagger(app.Environment);
-app.UseForwardedHeaders(new ForwardedHeadersOptions
+var forwardedOptions = new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-});
+};
+forwardedOptions.KnownNetworks.Clear();
+forwardedOptions.KnownProxies.Clear();
+app.UseForwardedHeaders(forwardedOptions);
 app.UseCors("AllowAll");
 
 
