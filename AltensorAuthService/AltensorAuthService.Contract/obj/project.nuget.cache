@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1TWFt5ZLeZs=",
+  "dgSpecHash": "dQQ0K8HBx4M=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Contract\\AltensorAuthService.Contract.csproj",
+  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Contract\\AltensorAuthService.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "10zmufqvuzk=",
+  "dgSpecHash": "d727rc37sOs=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Application\\Altensorcrm.Application.csproj",
+  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Application\\Altensorcrm.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.29\\microsoft.aspnetcore.authentication.jwtbearer.8.0.29.nupkg.sha512",

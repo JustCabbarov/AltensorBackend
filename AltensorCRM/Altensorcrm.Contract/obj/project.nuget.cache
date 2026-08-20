@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0nLSYAFEjhc=",
+  "dgSpecHash": "8q623691h2E=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj",
+  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.29\\microsoft.entityframeworkcore.8.0.29.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.29\\microsoft.entityframeworkcore.abstractions.8.0.29.nupkg.sha512",

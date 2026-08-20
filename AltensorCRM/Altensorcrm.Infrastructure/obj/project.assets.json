@@ -603,11 +603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\Altensorcrm.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\Altensorcrm.Infrastructure.csproj",
       "projectName": "Altensorcrm.Infrastructure",
-      "projectPath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\Altensorcrm.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\Altensorcrm.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Huawei\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -628,8 +628,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj": {
-              "projectPath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj"
+            "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj": {
+              "projectPath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Contract\\Altensorcrm.Contract.csproj"
             }
           }
         }

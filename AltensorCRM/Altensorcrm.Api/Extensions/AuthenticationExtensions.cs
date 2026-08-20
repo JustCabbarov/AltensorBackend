@@ -33,7 +33,7 @@ public static class AuthenticationExtensions
             httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
         }
 
-        using var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
+        var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
 
         System.Collections.Generic.IList<SecurityKey> GetSigningKeys(string? kid)
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h70/tUNWZLU=",
+  "dgSpecHash": "5/hEjaH3b9k=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Domain\\Altensorcrm.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorCRM\\Altensorcrm.Domain\\Altensorcrm.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.29\\microsoft.entityframeworkcore.8.0.29.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.29\\microsoft.entityframeworkcore.abstractions.8.0.29.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nl86EtxOdnY=",
+  "dgSpecHash": "Vm4Tt4mR3Bg=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\Task-Management-System\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\Task-Management-System\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
