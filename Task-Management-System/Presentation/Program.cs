@@ -12,6 +12,7 @@ using Minio;
 using Persistence.Data;
 using Persistence.Repositories;
 using Presentation.ExceptionHandler;
+using Presentation.Extensions;
 using Presentation.Hubs;
 using Presentation.Middleware;
 using Serilog;
@@ -76,117 +77,7 @@ namespace Presentationn
             builder.Services.AddAutoMapper(m => m.AddProfile(new CustomProfile()));
 
             // ================= Authentication (RS256 + JWKS Key Resolver) =================
-            var jwksUrl = builder.Configuration["AuthService:JwksEndpoint"]
-                          ?? builder.Configuration["AuthService:JwksUrl"]
-                          ?? builder.Configuration["AltensorAuth:JwksUrl"]
-                          ?? "https://api-info.altensor.com/.well-known/jwks.json";
-
-            var httpHandler = new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-            };
-            var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
-
-            var keyCache = new System.Collections.Concurrent.ConcurrentDictionary<string, SecurityKey>();
-            DateTime lastFetched = DateTime.MinValue;
-            var keyLock = new object();
-
-            IList<SecurityKey> GetSigningKeys(string? kid, bool forceRefresh = false)
-            {
-                lock (keyLock)
-                {
-                    bool isCacheExpired = DateTime.UtcNow - lastFetched >= TimeSpan.FromMinutes(2);
-                    bool kidMissing = !string.IsNullOrEmpty(kid) && !keyCache.ContainsKey(kid);
-
-                    if (!forceRefresh && !isCacheExpired && !kidMissing && keyCache.Count > 0)
-                    {
-                        return keyCache.Values.ToList();
-                    }
-
-                    try
-                    {
-                        var jwksJson = jwksHttpClient.GetStringAsync(jwksUrl).GetAwaiter().GetResult();
-                        var jwks = new JsonWebKeySet(jwksJson);
-                        var keys = jwks.GetSigningKeys();
-
-                        if (keys != null && keys.Count > 0)
-                        {
-                            keyCache.Clear();
-                            foreach (var key in keys)
-                            {
-                                if (!string.IsNullOrEmpty(key.KeyId))
-                                {
-                                    keyCache[key.KeyId] = key;
-                                }
-                            }
-                            lastFetched = DateTime.UtcNow;
-                            Log.Information("[JWT] JWKS keys successfully fetched and cached from {JwksUrl}. Key count: {Count}", jwksUrl, keys.Count);
-                            return keys;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Log.Error(ex, "[JWT] Failed to fetch JWKS from {JwksUrl}", jwksUrl);
-                    }
-
-                    return keyCache.Values.ToList();
-                }
-            }
-
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(opt =>
-            {
-                opt.RequireHttpsMetadata = builder.Configuration.GetValue<bool>("Jwt:RequireHttpsMetadata", false);
-
-                opt.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-
-                    ValidIssuer = builder.Configuration["Jwt:Issuer"] ?? "AltensorAuthService",
-                    ValidAudience = builder.Configuration["Jwt:Audience"] ?? "AltensorPlatform",
-                    ClockSkew = TimeSpan.FromSeconds(30),
-
-                    IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
-                    {
-                        return GetSigningKeys(kid);
-                    }
-                };
-
-                // Həm SignalR, həm də URL parametrindən (?token= və ya ?access_token=) gələn tokenləri qəbul edirik:
-                opt.Events = new JwtBearerEvents
-                {
-                    OnMessageReceived = context =>
-                    {
-                        var accessToken = context.Request.Query["access_token"].FirstOrDefault()
-                                       ?? context.Request.Query["token"].FirstOrDefault();
-
-                        if (!string.IsNullOrEmpty(accessToken))
-                        {
-                            context.Token = accessToken;
-                        }
-                        return Task.CompletedTask;
-                    },
-                    OnAuthenticationFailed = context =>
-                    {
-                        Log.Error("[JWT] Auth failed: {ErrorMessage}", context.Exception.Message);
-                        if (context.Exception is SecurityTokenInvalidSignatureException ||
-                            context.Exception is SecurityTokenSignatureKeyNotFoundException)
-                        {
-                            Log.Warning("[JWT] Key mismatch or invalid signature detected. Triggering forced JWKS refresh.");
-                            GetSigningKeys(null, forceRefresh: true);
-                        }
-                        return Task.CompletedTask;
-                    }
-                };
-            });
+            builder.Services.AddAltensorAuthentication(builder.Configuration);
 
             // ================= Authorization Policies =================
             builder.Services.AddAuthorization(options =>
