@@ -1,26 +1,13 @@
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.deps.json
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.pdb
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.AssemblyReference.cache
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfoInputs.cache
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfo.cs
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.CoreCompileInputs.cache
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\refint\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.pdb
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\ref\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.sourcelink.json
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.deps.json
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.pdb
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.AssemblyReference.cache
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfoInputs.cache
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfo.cs
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.CoreCompileInputs.cache
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.sourcelink.json
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\refint\AltensorAuthService.Domain.dll
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.pdb
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\ref\AltensorAuthService.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\bin\Debug\net8.0\AltensorAuthService.Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\refint\AltensorAuthService.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\AltensorAuthService.Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Domain\obj\Debug\net8.0\ref\AltensorAuthService.Domain.dll

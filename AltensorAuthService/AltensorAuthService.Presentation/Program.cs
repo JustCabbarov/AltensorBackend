@@ -3,6 +3,7 @@ using AltensorAuthService.Persistence;
 using AltensorAuthService.Persistence.Data.Seed;
 using AltensorAuthService.Presentation.Extensions;
 using AltensorAuthService.Presentation.Middleware;
+using Microsoft.AspNetCore.HttpOverrides;
 using Serilog;
 
 LoggingExtensions.ConfigureSerilog();
@@ -53,9 +54,12 @@ app.UseMiddleware<GlobalExceptionMiddleware>();
 
 // Swagger UI
 app.UseAppSwagger(app.Environment);
-
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 app.UseCors("AllowAll");
-app.UseHttpsRedirection();
+
 
 // Authentication & Authorization Pipeline
 app.UseAuthentication();

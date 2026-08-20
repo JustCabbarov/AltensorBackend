@@ -4,6 +4,7 @@ using ApplicationLayer.Services;
 using Contract.Services;
 using Domain.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -15,7 +16,6 @@ using Presentation.Hubs;
 using Presentation.Middleware;
 using Serilog;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.AspNetCore.HttpOverrides;
 
 namespace Presentationn
 {
@@ -127,7 +127,7 @@ namespace Presentationn
             })
             .AddJwtBearer(opt =>
             {
-                opt.RequireHttpsMetadata = builder.Configuration.GetValue<bool>("Jwt:RequireHttpsMetadata", true);
+                opt.RequireHttpsMetadata = builder.Configuration.GetValue<bool>("Jwt:RequireHttpsMetadata", false);
 
                 opt.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -146,15 +146,15 @@ namespace Presentationn
                     }
                 };
 
-                // SignalR dəstəyi
+                // Həm SignalR, həm də URL parametrindən (?token= və ya ?access_token=) gələn tokenləri qəbul edirik:
                 opt.Events = new JwtBearerEvents
                 {
                     OnMessageReceived = context =>
                     {
-                        var accessToken = context.Request.Query["access_token"];
-                        var path = context.HttpContext.Request.Path;
-                        if (!string.IsNullOrEmpty(accessToken) &&
-                            path.StartsWithSegments("/hubs/notification"))
+                        var accessToken = context.Request.Query["access_token"].FirstOrDefault()
+                                       ?? context.Request.Query["token"].FirstOrDefault();
+
+                        if (!string.IsNullOrEmpty(accessToken))
                         {
                             context.Token = accessToken;
                         }
@@ -247,23 +247,21 @@ namespace Presentationn
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-            else
-            {
-                app.UseExceptionHandler();
-            }
-
+            // ================= Nginx Forwarded Headers (HTTPS dəstəyi) =================
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
+            app.UseSwagger();
+            app.UseSwaggerUI();
+
+            app.UseExceptionHandler();
+
             app.UseCors("ClientPermission");
-            app.UseHttpsRedirection();
+
+            // Nginx HTTPS-i idarə etdiyi üçün app.UseHttpsRedirection() daxildə lazım deyil (şərhə alırıq)
+            // app.UseHttpsRedirection();
 
             // Pipeline sıralaması
             app.UseAuthentication();

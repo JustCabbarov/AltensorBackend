@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\",
   "Documents": [
     {
@@ -17,6 +18,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\huawei\\desktop\\altensor backend\\altensorauthservice\\altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorauthservice\\altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorauthservice\\altensorauthservice.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorauthservice\\altensorauthservice.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B54741A-C989-5DD1-50DD-3DB21780F99A}|AltensorAuthService.Persistence\\AltensorAuthService.Persistence.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorauthservice\\altensorauthservice.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B54741A-C989-5DD1-50DD-3DB21780F99A}|AltensorAuthService.Persistence\\AltensorAuthService.Persistence.csproj|solutionrelative:altensorauthservice.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\administrator\\desktop\\altensorbackend\\altensorauthservice\\altensorauthservice.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b6855f4a020d64899c84051cb88ba3ccc4aadb67
     }
   ],
   "DocumentGroupContainers": [
@@ -29,6 +57,7 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -47,10 +76,23 @@
               "ViewState": "AgIAADEAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-18T19:23:07.545Z",
+=======
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAlpmZmRkawCUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:15:38.748Z",
+>>>>>>> b6855f4a020d64899c84051cb88ba3ccc4aadb67
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "PermissionsController.cs",
               "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\PermissionsController.cs",
@@ -60,11 +102,36 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-18T19:20:38.249Z",
+=======
+              "DocumentIndex": 5,
+              "Title": "20260819050756_init.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs",
+              "RelativeToolTip": "AltensorAuthService.Persistence\\Migrations\\20260819050756_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:07:57.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\Program.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Program.cs",
+              "ViewState": "AgIAACoAAADAZWZmZmYUwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T17:11:56.901Z",
+>>>>>>> b6855f4a020d64899c84051cb88ba3ccc4aadb67
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
@@ -73,11 +140,35 @@
               "ViewState": "AgIAADgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-18T19:20:25.897Z",
+=======
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\appsettings.Development.json",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-18T17:11:50.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Presentation\\appsettings.json",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\appsettings.json",
+              "ViewState": "AgIAABIAAAAAAgAAAAABwAoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-18T17:11:35.893Z",
+>>>>>>> b6855f4a020d64899c84051cb88ba3ccc4aadb67
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< HEAD
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Program.cs",
               "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Program.cs",
@@ -99,6 +190,19 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
+=======
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Persistence\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\AltensorBackend\\AltensorAuthService\\AltensorAuthService.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "AltensorAuthService.Persistence\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:23:47.445Z",
+              "EditorCaption": ""
+            }
+          ]
+>>>>>>> b6855f4a020d64899c84051cb88ba3ccc4aadb67
         }
       ]
     }
