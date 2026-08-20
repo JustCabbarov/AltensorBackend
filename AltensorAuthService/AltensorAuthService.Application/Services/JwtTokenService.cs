@@ -37,58 +37,42 @@ namespace AltensorAuthService.Application.Services
 
             _rsa = RSA.Create();
             var privateKeyPem = _configuration["Jwt:PrivateKeyPem"];
-            var keyFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "jwt_rsa_private.pem");
 
-            if (!string.IsNullOrWhiteSpace(privateKeyPem))
+            if (string.IsNullOrWhiteSpace(privateKeyPem))
             {
-                try
-                {
-                    _rsa.ImportFromPem(privateKeyPem.AsSpan());
-                    _logger.LogInformation("RSA açarı konfiqurasiyadakı PEM mətnindən uğurla yükləndi. KeyId='{KeyId}'", _keyId);
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogWarning(ex, "PEM açarını oxuyarkən xəta baş verdi. Avtomatik 2048-bit RSA açarı generasiya edilir.");
-                    _rsa = RSA.Create(2048);
-                }
+                _logger.LogCritical("Jwt:PrivateKeyPem konfiqurasiyada tapılmadı və ya boşdur! Auth Service işə düşə bilməz. KeyId='{KeyId}'", _keyId);
+                throw new InvalidOperationException($"Jwt:PrivateKeyPem configuration is missing or empty. Auth Service cannot start. KeyId='{_keyId}'");
             }
-            else if (File.Exists(keyFilePath))
+
+            try
             {
-                try
-                {
-                    var pemText = File.ReadAllText(keyFilePath);
-                    _rsa.ImportFromPem(pemText.AsSpan());
-                    _logger.LogInformation("RSA açarı fayldan ({FilePath}) uğurla yükləndi. KeyId='{KeyId}'", keyFilePath, _keyId);
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogWarning(ex, "Fayldakı PEM açarını oxuyarkən xəta baş verdi. Yeni RSA açarı generasiya edilir.");
-                    _rsa = RSA.Create(2048);
-                    try
-                    {
-                        File.WriteAllText(keyFilePath, _rsa.ExportPkcs8PrivateKeyPem());
-                    }
-                    catch { }
-                }
+                var normalizedPem = NormalizePemString(privateKeyPem);
+                _rsa.ImportFromPem(normalizedPem.AsSpan());
+                _logger.LogInformation("RSA açarı konfiqurasiyadakı PEM mətnindən uğurla yükləndi. KeyId='{KeyId}'", _keyId);
             }
-            else
+            catch (Exception ex)
             {
-                _logger.LogInformation("Konfiqurasiyada PEM açarı tapılmadı. Yeni 2048-bit RSA açarı generasiya edildi və fayla yazıldı ({FilePath}). KeyId='{KeyId}'", keyFilePath, _keyId);
-                _rsa = RSA.Create(2048);
-                try
-                {
-                    File.WriteAllText(keyFilePath, _rsa.ExportPkcs8PrivateKeyPem());
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogWarning(ex, "RSA açarını fayla yazmaq mümkün olmadı.");
-                }
+                _logger.LogCritical(ex, "Jwt:PrivateKeyPem oxunarkən kritik xəta baş verdi! RSA Private Key zədələnib və ya səhv formatdadır. Auth Service işə düşə bilməz. KeyId='{KeyId}'", _keyId);
+                throw new InvalidOperationException($"Failed to load RSA Private Key from Jwt:PrivateKeyPem: {ex.Message}. Auth Service cannot start.", ex);
             }
 
             _signingKey = new RsaSecurityKey(_rsa)
             {
                 KeyId = _keyId
             };
+        }
+
+        private static string NormalizePemString(string pem)
+        {
+            if (string.IsNullOrWhiteSpace(pem))
+                return string.Empty;
+
+            var normalized = pem.Replace("\\r\\n", "\n")
+                                .Replace("\\n", "\n")
+                                .Replace("\r\n", "\n")
+                                .Trim();
+
+            return normalized;
         }
 
         public Task<string> GenerateAccessTokenAsync(

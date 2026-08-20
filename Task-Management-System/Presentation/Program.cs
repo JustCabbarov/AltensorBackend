@@ -91,16 +91,16 @@ namespace Presentationn
             DateTime lastFetched = DateTime.MinValue;
             var keyLock = new object();
 
-            IList<SecurityKey> GetSigningKeys(string? kid)
+            IList<SecurityKey> GetSigningKeys(string? kid, bool forceRefresh = false)
             {
                 lock (keyLock)
                 {
-                    if (keyCache.Count > 0 && (DateTime.UtcNow - lastFetched < TimeSpan.FromMinutes(15)))
+                    bool isCacheExpired = DateTime.UtcNow - lastFetched >= TimeSpan.FromMinutes(2);
+                    bool kidMissing = !string.IsNullOrEmpty(kid) && !keyCache.ContainsKey(kid);
+
+                    if (!forceRefresh && !isCacheExpired && !kidMissing && keyCache.Count > 0)
                     {
-                        if (string.IsNullOrEmpty(kid) || keyCache.ContainsKey(kid))
-                        {
-                            return keyCache.Values.ToList();
-                        }
+                        return keyCache.Values.ToList();
                     }
 
                     try
@@ -120,6 +120,7 @@ namespace Presentationn
                                 }
                             }
                             lastFetched = DateTime.UtcNow;
+                            Log.Information("[JWT] JWKS keys successfully fetched and cached from {JwksUrl}. Key count: {Count}", jwksUrl, keys.Count);
                             return keys;
                         }
                     }
@@ -176,6 +177,12 @@ namespace Presentationn
                     OnAuthenticationFailed = context =>
                     {
                         Log.Error("[JWT] Auth failed: {ErrorMessage}", context.Exception.Message);
+                        if (context.Exception is SecurityTokenInvalidSignatureException ||
+                            context.Exception is SecurityTokenSignatureKeyNotFoundException)
+                        {
+                            Log.Warning("[JWT] Key mismatch or invalid signature detected. Triggering forced JWKS refresh.");
+                            GetSigningKeys(null, forceRefresh: true);
+                        }
                         return Task.CompletedTask;
                     }
                 };
