@@ -40,6 +40,12 @@ namespace AltensorAuthService.Persistence.Integration
 
             _logger.LogDebug("Tenant {TenantId} üçün {Count} aktiv modul abunəliyi tapıldı.", tenantId, moduleCodes.Count);
 
+            // Əgər spesifik abunəlik tapılmasa, default olaraq tms və crm modullarına webhook at
+            if (moduleCodes.Count == 0)
+            {
+                moduleCodes = new List<string> { "tms", "crm" };
+            }
+
             var endpoints = new List<string>();
 
             foreach (var code in moduleCodes)
