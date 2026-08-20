@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\huawei\\desktop\\altensor backend\\altensorauthservice\\altensorauthservice.presentation\\controllers\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\controllers\\platformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\huawei\\desktop\\altensor backend\\altensorauthservice\\altensorauthservice.presentation\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\controllers\\permissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\huawei\\desktop\\altensor backend\\altensorauthservice\\altensorauthservice.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|c:\\users\\huawei\\desktop\\altensor backend\\altensorauthservice\\altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6661C7-5637-E83B-E20C-295B9A85BB24}|AltensorAuthService.Presentation\\AltensorAuthService.Presentation.csproj|solutionrelative:altensorauthservice.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlatformController.cs",
+              "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\PlatformController.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Controllers\\PlatformController.cs",
+              "ToolTip": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\PlatformController.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Controllers\\PlatformController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T19:23:07.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermissionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\PermissionsController.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Controllers\\PermissionsController.cs",
+              "ToolTip": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\PermissionsController.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Controllers\\PermissionsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T19:20:38.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T19:20:25.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "AltensorAuthService.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Presentation\\Program.cs",
+              "RelativeToolTip": "AltensorAuthService.Presentation\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T19:18:43.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

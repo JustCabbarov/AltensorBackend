@@ -68,3 +68,21 @@ C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Alt
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\refint\Altensorcrm.Application.dll
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.pdb
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\ref\Altensorcrm.Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Application.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Application.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\bin\Debug\net8.0\Altensorcrm.Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensor.23722E89.Up2Date
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\refint\Altensorcrm.Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\Altensorcrm.Application.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Application\obj\Debug\net8.0\ref\Altensorcrm.Application.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "264YVOejIX8=",
+  "dgSpecHash": "qR3GgFpEXQY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj",
+  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\Task-Management-System\\ApplicationLayer\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\automapper\\16.0.0\\automapper.16.0.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -67,8 +67,8 @@
     "C:\\Users\\Huawei\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
+    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.27\\microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512"
   ],
   "logs": [
@@ -76,9 +76,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'AutoMapper' 16.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj",
+      "projectPath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\Task-Management-System\\ApplicationLayer\\Application.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Huawei\\Desktop\\Task-Management-System\\ApplicationLayer\\Application.csproj",
+      "filePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\Task-Management-System\\ApplicationLayer\\Application.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"

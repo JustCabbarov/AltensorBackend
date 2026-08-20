@@ -17,6 +17,14 @@ namespace Contract.Services
         /// <summary>JWT-dəki "tenant_status" claim-i: Active | Trial | Suspended | Expired</summary>
         string? TenantStatus { get; }
 
+        string? Email { get; }
+        System.Collections.Generic.IEnumerable<string> Roles { get; }
+        System.Collections.Generic.IEnumerable<string> Permissions { get; }
+        System.Collections.Generic.IEnumerable<string> Modules { get; }
+
+        bool HasPermission(string permission);
+        bool HasModuleAccess(string moduleCode);
+
         bool IsAuthenticated { get; }
         bool IsPlatformSuperAdmin { get; }
         bool IsTenantAdmin { get; }

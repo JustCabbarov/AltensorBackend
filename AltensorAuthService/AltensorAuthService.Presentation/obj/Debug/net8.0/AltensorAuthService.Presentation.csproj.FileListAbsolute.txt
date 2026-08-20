@@ -311,7 +311,6 @@ C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\Altensor.AED4AB19.Up2Date
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\AltensorAuthService.Presentation.dll
 C:\Users\Huawei\Desktop\Altensor Backend\AltensorAuthService\AltensorAuthService.Presentation\obj\Debug\net8.0\refint\AltensorAuthService.Presentation.dll

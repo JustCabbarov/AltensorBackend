@@ -36,3 +36,23 @@ C:\Users\Huawei\Desktop\Task-Management-System\Persistence\obj\Debug\net8.0\Pers
 C:\Users\Huawei\Desktop\Task-Management-System\Persistence\obj\Debug\net8.0\ref\Persistence.dll
 C:\Users\Huawei\Desktop\Task-Management-System\Persistence\bin\Debug\net8.0\Contract.dll
 C:\Users\Huawei\Desktop\Task-Management-System\Persistence\bin\Debug\net8.0\Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Persistence.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Persistence.runtimeconfig.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Persistence.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Persistence.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\bin\Debug\net8.0\Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Persistence\obj\Debug\net8.0\ref\Persistence.dll

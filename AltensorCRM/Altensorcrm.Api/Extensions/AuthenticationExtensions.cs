@@ -14,6 +14,7 @@ public static class AuthenticationExtensions
 {
     private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, SecurityKey> KeyCache = new();
     private static DateTime _lastKeyFetch = DateTime.MinValue;
+    private static readonly object KeyLock = new();
 
     public static IServiceCollection AddAltensorAuthentication(this IServiceCollection services, IConfiguration configuration)
     {
@@ -21,7 +22,59 @@ public static class AuthenticationExtensions
         var audience = configuration["Jwt:Audience"] ?? "AltensorPlatform";
         var jwksUrl = configuration["AuthService:JwksEndpoint"] 
                    ?? configuration["AuthService:JwksUrl"]
-                   ?? "https://localhost:7049/.well-known/jwks.json";
+                   ?? "https://api-info.altensor.com/.well-known/jwks.json";
+        var requireHttpsMetadata = configuration.GetValue<bool>("Jwt:RequireHttpsMetadata", true);
+
+        var httpHandler = new HttpClientHandler();
+        // Allow self-signed certs in development environment if needed
+        var isDev = string.Equals(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"), "Development", StringComparison.OrdinalIgnoreCase);
+        if (isDev)
+        {
+            httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+        }
+
+        using var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
+
+        System.Collections.Generic.IList<SecurityKey> GetSigningKeys(string? kid)
+        {
+            lock (KeyLock)
+            {
+                if (KeyCache.Count > 0 && (DateTime.UtcNow - _lastKeyFetch < TimeSpan.FromMinutes(15)))
+                {
+                    if (string.IsNullOrEmpty(kid) || KeyCache.ContainsKey(kid))
+                    {
+                        return KeyCache.Values.ToList();
+                    }
+                }
+
+                try
+                {
+                    var response = jwksHttpClient.GetStringAsync(jwksUrl).GetAwaiter().GetResult();
+                    var jwks = new JsonWebKeySet(response);
+                    var keys = jwks.GetSigningKeys();
+
+                    if (keys != null && keys.Count > 0)
+                    {
+                        KeyCache.Clear();
+                        foreach (var key in keys)
+                        {
+                            if (!string.IsNullOrEmpty(key.KeyId))
+                            {
+                                KeyCache[key.KeyId] = key;
+                            }
+                        }
+                        _lastKeyFetch = DateTime.UtcNow;
+                        return keys;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[Auth] JWKS açarları oxunarkən xəta: {ex.Message}");
+                }
+
+                return KeyCache.Values.ToList();
+            }
+        }
 
         services.AddAuthentication(options =>
         {
@@ -30,7 +83,7 @@ public static class AuthenticationExtensions
         })
         .AddJwtBearer(options =>
         {
-            options.RequireHttpsMetadata = false;
+            options.RequireHttpsMetadata = requireHttpsMetadata;
             options.SaveToken = true;
 
             options.TokenValidationParameters = new TokenValidationParameters
@@ -45,79 +98,7 @@ public static class AuthenticationExtensions
 
                 IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
                 {
-                    // Check cache first
-                    if (!string.IsNullOrEmpty(kid) && KeyCache.TryGetValue(kid, out var cachedKey))
-                    {
-                        return new[] { cachedKey };
-                    }
-
-                    try
-                    {
-                        var handler = new HttpClientHandler
-                        {
-                            ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-                        };
-                        using var httpClient = new HttpClient(handler) { Timeout = TimeSpan.FromSeconds(5) };
-                        
-                        string response;
-                        try
-                        {
-                            response = httpClient.GetStringAsync(jwksUrl).GetAwaiter().GetResult();
-                        }
-                        catch
-                        {
-                            // Fallback to HTTP if HTTPS fails
-                            var fallbackUrl = jwksUrl.Replace("https://localhost:7049", "http://localhost:5155");
-                            response = httpClient.GetStringAsync(fallbackUrl).GetAwaiter().GetResult();
-                        }
-
-                        using var doc = JsonDocument.Parse(response);
-                        if (doc.RootElement.TryGetProperty("keys", out var keys) || doc.RootElement.TryGetProperty("Keys", out keys))
-                        {
-                            var matchedKeys = new System.Collections.Generic.List<SecurityKey>();
-
-                            foreach (var key in keys.EnumerateArray())
-                            {
-                                var currentKid = key.TryGetProperty("kid", out var kidProp) ? kidProp.GetString() : null;
-                                var n = key.TryGetProperty("n", out var nProp) ? nProp.GetString() : null;
-                                var e = key.TryGetProperty("e", out var eProp) ? eProp.GetString() : null;
-
-                                if (!string.IsNullOrEmpty(n) && !string.IsNullOrEmpty(e))
-                                {
-                                    var rsaParams = new RSAParameters
-                                    {
-                                        Modulus = Base64UrlEncoder.DecodeBytes(n),
-                                        Exponent = Base64UrlEncoder.DecodeBytes(e)
-                                    };
-
-                                    var rsa = RSA.Create();
-                                    rsa.ImportParameters(rsaParams);
-                                    var rsaKey = new RsaSecurityKey(rsa) { KeyId = currentKid ?? string.Empty };
-
-                                    if (!string.IsNullOrEmpty(currentKid))
-                                    {
-                                        KeyCache[currentKid] = rsaKey;
-                                    }
-
-                                    if (string.IsNullOrEmpty(kid) || currentKid == kid)
-                                    {
-                                        matchedKeys.Add(rsaKey);
-                                    }
-                                }
-                            }
-
-                            if (matchedKeys.Count > 0)
-                            {
-                                return matchedKeys;
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"[Auth] JWKS açarları oxunarkən xəta: {ex.Message}");
-                    }
-
-                    return KeyCache.Values;
+                    return GetSigningKeys(kid);
                 }
             };
 

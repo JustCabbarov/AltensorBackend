@@ -38,3 +38,23 @@ C:\Users\Huawei\Desktop\Task-Management-System\ApplicationLayer\obj\Debug\net8.0
 C:\Users\Huawei\Desktop\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\refint\Application.dll
 C:\Users\Huawei\Desktop\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.pdb
 C:\Users\Huawei\Desktop\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\ref\Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Application.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Application.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Persistence.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Persistence.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\bin\Debug\net8.0\Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\refint\Application.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\Application.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\ApplicationLayer\obj\Debug\net8.0\ref\Application.dll

@@ -30,3 +30,19 @@ C:\Users\Huawei\Desktop\Task-Management-System\Contract\obj\Debug\net8.0\Contrac
 C:\Users\Huawei\Desktop\Task-Management-System\Contract\obj\Debug\net8.0\refint\Contract.dll
 C:\Users\Huawei\Desktop\Task-Management-System\Contract\obj\Debug\net8.0\Contract.pdb
 C:\Users\Huawei\Desktop\Task-Management-System\Contract\obj\Debug\net8.0\ref\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\bin\Debug\net8.0\Contract.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\bin\Debug\net8.0\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\bin\Debug\net8.0\Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\bin\Debug\net8.0\Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\bin\Debug\net8.0\Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.csproj.Up2Date
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\refint\Contract.dll
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\Contract.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\Task-Management-System\Contract\obj\Debug\net8.0\ref\Contract.dll

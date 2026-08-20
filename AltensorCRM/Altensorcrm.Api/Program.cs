@@ -12,7 +12,11 @@ using Altensorcrm.Persistence.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.OpenApi.Models;
+
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -132,13 +136,18 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCors("AllowAll");
 
 app.UseAuthentication();
-app.UseAuthorization();
 app.UseMiddleware<TenantStatusMiddleware>();
+app.UseAuthorization();
 
 app.MapControllers();
 

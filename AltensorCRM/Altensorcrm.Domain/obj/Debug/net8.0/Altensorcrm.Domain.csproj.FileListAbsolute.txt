@@ -48,3 +48,16 @@ C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensor
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\refint\Altensorcrm.Domain.dll
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.pdb
 C:\Users\Huawei\Desktop\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\ref\Altensorcrm.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.deps.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\bin\Debug\net8.0\Altensorcrm.Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.csproj.AssemblyReference.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.AssemblyInfoInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.AssemblyInfo.cs
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.csproj.CoreCompileInputs.cache
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.sourcelink.json
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\refint\Altensorcrm.Domain.dll
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\Altensorcrm.Domain.pdb
+c:\Users\Huawei\Desktop\Altensor Backend\AltensorCRM\Altensorcrm.Domain\obj\Debug\net8.0\ref\Altensorcrm.Domain.dll

@@ -15,6 +15,7 @@ using Presentation.Hubs;
 using Presentation.Middleware;
 using Serilog;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace Presentationn
 {
@@ -77,13 +78,14 @@ namespace Presentationn
             // ================= Authentication (RS256 + JWKS Key Resolver) =================
             var jwksUrl = builder.Configuration["AuthService:JwksUrl"]
                           ?? builder.Configuration["AltensorAuth:JwksUrl"]
-                          ?? "https://localhost:7049/.well-known/jwks.json";
+                          ?? "https://api-info.altensor.com/.well-known/jwks.json";
 
-            var httpHandler = new HttpClientHandler
+            var httpHandler = new HttpClientHandler();
+            if (builder.Environment.IsDevelopment())
             {
-                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-            };
-            var jwksHttpClient = new HttpClient(httpHandler);
+                httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+            }
+            var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
 
             IList<SecurityKey>? cachedKeys = null;
             DateTime lastFetched = DateTime.MinValue;
@@ -125,7 +127,7 @@ namespace Presentationn
             })
             .AddJwtBearer(opt =>
             {
-                opt.RequireHttpsMetadata = false;
+                opt.RequireHttpsMetadata = builder.Configuration.GetValue<bool>("Jwt:RequireHttpsMetadata", true);
 
                 opt.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -134,8 +136,8 @@ namespace Presentationn
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = "AltensorAuthService",
-                    ValidAudience = "AltensorPlatform",
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"] ?? "AltensorAuthService",
+                    ValidAudience = builder.Configuration["Jwt:Audience"] ?? "AltensorPlatform",
                     ClockSkew = TimeSpan.FromSeconds(30),
 
                     IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
@@ -254,6 +256,11 @@ namespace Presentationn
             {
                 app.UseExceptionHandler();
             }
+
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
 
             app.UseCors("ClientPermission");
             app.UseHttpsRedirection();

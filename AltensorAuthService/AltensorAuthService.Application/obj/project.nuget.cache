@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F+5DLxPvneo=",
+  "dgSpecHash": "bUdtB17GRj4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Application\\AltensorAuthService.Application.csproj",
+  "projectFilePath": "c:\\Users\\Huawei\\Desktop\\Altensor Backend\\AltensorAuthService\\AltensorAuthService.Application\\AltensorAuthService.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huawei\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.30\\microsoft.aspnetcore.authentication.jwtbearer.8.0.30.nupkg.sha512",
@@ -33,8 +33,8 @@
     "C:\\Users\\Huawei\\.nuget\\packages\\serilog\\4.4.0\\serilog.4.4.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.3\\system.identitymodel.tokens.jwt.7.7.3.nupkg.sha512",
-    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.27\\microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
+    "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.27\\microsoft.windowsdesktop.app.ref.8.0.27.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.27\\microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512"
   ],
   "logs": []
