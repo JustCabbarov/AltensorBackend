@@ -76,18 +76,18 @@ namespace Presentationn
             builder.Services.AddAutoMapper(m => m.AddProfile(new CustomProfile()));
 
             // ================= Authentication (RS256 + JWKS Key Resolver) =================
-            var jwksUrl = builder.Configuration["AuthService:JwksUrl"]
+            var jwksUrl = builder.Configuration["AuthService:JwksEndpoint"]
+                          ?? builder.Configuration["AuthService:JwksUrl"]
                           ?? builder.Configuration["AltensorAuth:JwksUrl"]
                           ?? "https://api-info.altensor.com/.well-known/jwks.json";
 
-            var httpHandler = new HttpClientHandler();
-            if (builder.Environment.IsDevelopment())
+            var httpHandler = new HttpClientHandler
             {
-                httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-            }
+                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+            };
             var jwksHttpClient = new HttpClient(httpHandler) { Timeout = TimeSpan.FromSeconds(10) };
 
-            IList<SecurityKey>? cachedKeys = null;
+            var keyCache = new System.Collections.Concurrent.ConcurrentDictionary<string, SecurityKey>();
             DateTime lastFetched = DateTime.MinValue;
             var keyLock = new object();
 
@@ -95,11 +95,11 @@ namespace Presentationn
             {
                 lock (keyLock)
                 {
-                    if (cachedKeys != null && cachedKeys.Count > 0 && (DateTime.UtcNow - lastFetched < TimeSpan.FromMinutes(15)))
+                    if (keyCache.Count > 0 && (DateTime.UtcNow - lastFetched < TimeSpan.FromMinutes(15)))
                     {
-                        if (string.IsNullOrEmpty(kid) || cachedKeys.Any(k => k.KeyId == kid))
+                        if (string.IsNullOrEmpty(kid) || keyCache.ContainsKey(kid))
                         {
-                            return cachedKeys;
+                            return keyCache.Values.ToList();
                         }
                     }
 
@@ -107,15 +107,28 @@ namespace Presentationn
                     {
                         var jwksJson = jwksHttpClient.GetStringAsync(jwksUrl).GetAwaiter().GetResult();
                         var jwks = new JsonWebKeySet(jwksJson);
-                        cachedKeys = jwks.GetSigningKeys();
-                        lastFetched = DateTime.UtcNow;
-                        return cachedKeys;
+                        var keys = jwks.GetSigningKeys();
+
+                        if (keys != null && keys.Count > 0)
+                        {
+                            keyCache.Clear();
+                            foreach (var key in keys)
+                            {
+                                if (!string.IsNullOrEmpty(key.KeyId))
+                                {
+                                    keyCache[key.KeyId] = key;
+                                }
+                            }
+                            lastFetched = DateTime.UtcNow;
+                            return keys;
+                        }
                     }
                     catch (Exception ex)
                     {
                         Log.Error(ex, "[JWT] Failed to fetch JWKS from {JwksUrl}", jwksUrl);
-                        return cachedKeys ?? new List<SecurityKey>();
                     }
+
+                    return keyCache.Values.ToList();
                 }
             }
 
